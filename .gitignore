@@ -32,4 +32,6 @@ __pycache__/
 *.gnuplot
 *.db
 *.zip
-*.rar
+*.pdf
+*.lof
+*.lot

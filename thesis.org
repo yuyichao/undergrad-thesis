@@ -1,0 +1,32 @@
+* DONE Abstract
+* DONE Acknoledgements
+* TODO Introduction (20min)
+** DONE General intro
+** TODO Experiment overview (20min)
+** DONE Thesis structure
+* TODO Theory (9h30min)
+** DONE Overview
+** TODO BEC (40min)
+*** DONE BEC in harmonic trap
+*** TODO BEC with interaction (40min)
+** TODO Lithium-7 atoms (2h10min)
+*** TODO Overview (40min)
+*** TODO Fine structure (40min)
+*** TODO Hyperfine structure (30min)
+*** TODO Zeeman effect (20min)
+** TODO Cooling and traping (6h40min)
+*** DONE Overview
+*** TODO Zeeman slower (40min)
+*** TODO MOT (1h)
+*** TODO Gray Molasses (2h)
+*** TODO ?Dark State Pumping (1h)
+*** TODO Magnetic trap (1h)
+*** TODO ODT (1h)
+* TODO Experiment
+** TODO Laser system
+** TODO Spin-flip zeeman slower
+** TODO MOT and CMOT
+** TODO Gray Molasses
+** TODO Magnetic trap and evaporative cooling
+** TODO Evaporate in optical dipole trap
+** TODO BEC

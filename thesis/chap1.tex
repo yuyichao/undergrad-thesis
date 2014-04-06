@@ -75,9 +75,21 @@ The atoms comes out of the oven has an average velocity determined by the Maxwel
 \eqar{
   \bar v=&\sqrt{\frac{k_BT}{2\pi m}}
 }
-We can slow down the atoms using the recoil of photon scattering by shining resonance light to the beam. However, since the atomic transition resonance is very narrow ($\Gamma=2\pi\cdot5.9\text{MHz}$) compare to the doppler shift ($\Delta\nu=\nu v/c\approx590\text{MHz}$), the atom will soon shift out of resonance once it slows down. There are several ways to solve this problem. One way is to change the laser frequency, either swiping with time or making it broadband (white light). The Zeeman slower solves the problem by changing the resonance of the atom with Zeeman effect.\\
+We can slow down the atoms using the recoil of photon scattering by shining resonance light to the beam. However, since the atomic transition resonance is very narrow ($\Gamma=2\pi\cdot5.9\text{MHz}$) compare to the doppler shift ($\Delta\nu=\nu v/c\approx590\text{MHz}$), the atom will soon shift out of resonance once it slows down. There are several ways to solve this problem. One way is to modulate the laser frequency, either swiping with time (frequency chriping) or making it broadband (white light). The Zeeman slower solves the problem by changing the resonance of the atom with Zeeman effect. This is the most popular way for alkali atoms which usually have a cycling transition with linear Zeeman effect in a large range.\\
 \\
-The
+The Zeeman slower has a magnetic field aligned with the atom beam with a spacially variant amplitude. By shining circularly polarized light against the atom beam, the atoms in the beam are optically pumped to one of the two stretch states determined by the relative direction of the field and the light polarization. If the magnetic field is changing in a way such that the Zeeman shift of the atom follows the Doppler shift when atoms slow down, the atom beam will be always in resonance and continuously being slowed down, i.e.
+\eqar{
+  g_Fm_F\mu_BB=\frac{v}{c}\nu+\Delta
+}
+For constant acceleration, this implies,
+\eqar{
+  B=\frac{\sqrt{v_0^2-2ax}}{g_Fm_F\mu_Bc}\nu+B_0
+}
+The maximum deceleration of the Zeeman slower is limited by the maximum scattering rate, therefore the life time of the excited state,
+\eqar{
+  a_{max}=&\frac{h\Gamma}{2\lambda}
+}
+where $\Gamma$ is the linewidth of the transition.
 
 \subsection{Magneto-Optical Trap (MOT)}\label{theory:mot}
 
@@ -95,5 +107,10 @@ Choose 2, 2 because we can use dark state pumping which ...
 Dark State pumping with D1 light
 
 \subsection{Evaporation in Static Magnetic Trap}\label{theory:mt}
+Trapable states
+Power law?
 
 \subsection{Evaporation in Optical Dipole Trap}\label{theory:odt}
+AC Stark Shift
+Cross ODT
+Feshbach resonance

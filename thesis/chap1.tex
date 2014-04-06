@@ -38,6 +38,8 @@ Condensate fraction (for large $N$),
 
 \subsection{Effect of interaction}
 
+The wavefunction of the condensed atoms is only the same with the single particle ground state wavefunction when there is no interaction between atoms. For interacting Bose gas this is no longer true. The
+
 The ... only works for non-interacting.... when adding in interaction.... change shape..... this sub section describe .... in order to measure ....
 
 \section{Lithium-$7$ Atoms}
@@ -64,18 +66,16 @@ $2^2P_{3/2}$ & $1$, $2$, $3$ & $\dfrac 23$ \\\hline
 % TODO high field Zeeman
 
 \section{Cooling and Traping Theory}
-The atoms used in a cold atom experiment often come from an oven at hundreds of degrees C (500 in our experiment) with low density.\\
-In order to achieve low temperature and high density required by the BEC condition. Several slowing, traping and cooling steps are usually necessary to ....\\
-In this section.... talk about ..... including ....\\
+
+The atoms used in an alkali atom experiment often come from an atom beam coming out of a oven kept above the melting temperature of the metal. The oven used in this experiment operates at $485^\circ\text{C}$ producing an atom beam traveling at several hundred meters per second. In order to achieve low temperature and high density, several stages of slowing, traping and cooling are implemented in this experiment which finally bring the atoms down to the Bose-Einstein condensate condition. In this section, I am going to talk about the theory behind these techniques we are using in our experiment.
 
 \subsection{Spin Flip Zeeman Slower}\label{theory:zeeman}
 
-The atoms comes out of the oven has ...\\
+The atoms comes out of the oven has an average velocity determined by the Maxwell-Boltzmann distribution,
 \eqar{
-  v=&\sqrt{\frac{k_BT}{2\pi m}}
+  \bar v=&\sqrt{\frac{k_BT}{2\pi m}}
 }
-
-The idea of Zeeman slower is .... however, if single frequency... not more than $\Gamma=5.9\text{MHz}$
+We can slow down the atoms using the recoil of photon scattering by shining resonance light to the beam. However, since the atomic transition resonance is very narrow ($\Gamma=2\pi\cdot5.9\text{MHz}$) compare to the doppler shift ($\Delta\nu=\nu v/c\approx590\text{MHz}$), the atom will soon shift out of resonance once it slows down. The Zeeman slower gets around this problem using a spacially variant magnetic field and circularly polarized $\sigma^+$ light.
 
 % TODO \sigma^\pm
 

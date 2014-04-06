@@ -12,10 +12,22 @@ Since the wave function of bosons is symmetric, multiple bosons can be in the sa
 \eqar{
   f(\varepsilon)=&\frac{1}{\ue^{\beta(\varepsilon-\mu)} - 1}
 }
-
-In order for the distribution to be possitive for all energy states, we have $\mu\geqslant0$
-
-In the experiment, in order to do cooling and manipulation on the atom cloud, ppl often use trap, in this experiment, the BEC is greated in X-ODT (ref ...)....
+Since the distribution has to be possitive for all energy states, in particular the $\varepsilon=0$ ground state, we have $\mu\geqslant0$. For all the state except the ground state, this sets an finite upper limit on the number of atoms in each state for a fixed temperature. Therefore, if the number of atoms exceeds a certain value, all the extra atoms will go into the ground state. These atoms condensed in the ground state are called the Bose Einstein condensate.\\
+\\
+In order to calculate the atom number in the condensate as well as the critical temperature, we can estimate the maximum atom number in the excited states (thermal atoms) with an integral,
+\eqar{
+  N_{th}=&\int_0^\infty\frac{g(\varepsilon)}{\ue^{\beta\varepsilon} - 1}\ud\varepsilon
+}
+where $g(\varepsilon)$ is the energy density of states. In our experiment, we create the BEC in a harmonic optical dipole trap (see \ref{theory:odt}) for which the energy density is,
+\eqar{
+  g(\varepsilon)=&\frac{\pi}{2} \frac{\varepsilon^2}{\hbar^3 \omega^3}
+}
+\eqar{
+  N_{th}=&\frac{\pi}{2\hbar^3 \omega^3}\int_0^\infty\frac{\varepsilon^2}{\ue^{\beta\varepsilon} - 1}\ud\varepsilon\\
+  =&\frac{\pi}{2\hbar^3 \omega^3\beta^3}\int_0^\infty\frac{x^2}{\ue^{x} - 1}\ud x\\
+  =&\frac{\pi}{2\hbar^3 \omega^3\beta^3}\zeta(3)\Gamma(3)\\
+  =&\frac{\pi}{2\hbar^3 \omega^3\beta^3}\zeta(3)\Gamma(3)
+}
 
 % zeta(3) Gamma(3) = 2.4041138063191885707994763230228999815299725846809977
 % zeta(3 / 2) Gamma(3 / 2) = 2.3151573733941170004258194691179813666769281990362037

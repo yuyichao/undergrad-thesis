@@ -46,7 +46,63 @@ The ... only works for non-interacting.... when adding in interaction.... change
 
 The atoms used in this experiment is the Bosonic isotope of Lithium, Lithium-$7$. In this section, I will present some properties of the Lithium-$7$ atoms that are important for the cooling and traping techniques we use in the experiment.\\
 \\
-One of the most important properties for laser manipulation of cold atoms is the energy levels. As all other alkali atoms, Lithium-$7$ has one unpaired valence electron with a $nS$ ground state and $nP$ excited states, where $n=2$ for Lithium-$7$. The fine structure split the excited states into $2^2P_{1/2}$ and $2^2P_{3/2}$ states corresponding to the $D1$ and $D2$ lines that are about $10GHz$ apart. On top of these, the hyperfine structure caused by the nucleus spin ($I=3/2$ for Lithium-$7$) further split each of these states into different levels with different total angular momentum $F$.\\
+One of the most important properties for laser manipulation of cold atoms is the energy levels. As all other alkali atoms, Lithium-$7$ has one unpaired valence electron with a $nS$ ground state and $nP$ excited states, where $n=2$ for Lithium-$7$. The fine structure split the excited states into $2^2P_{1/2}$ and $2^2P_{3/2}$ states corresponding to the $D1$ and $D2$ lines that are about $10GHz$ apart. On top of these, the hyperfine structure caused by the nucleus spin ($I=3/2$ for Lithium-$7$) further split each of these states into different levels with different total angular momentum $F$. the precise frequencies of these transitions measured in the experiment are shown in figure \ref{li:lines}\\
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+      % S1/2
+      % F1
+      \draw[line width=1] (0, 0) -- +(5, 0) node[right] {$F=1$};
+      % F2
+      \draw[line width=1] (0, 1) -- +(5, 0) node[right] {$F=2$};
+      \path (6, 0.5) node[right] {$2^2S_{1/2}$};
+
+      % P1/2
+      % F1
+      \draw[line width=1] (0, 4) -- +(5, 0) node[right] {$F=1$};
+      % F2
+      \draw[line width=1] (0, 5) -- +(5, 0) node[right] {$F=2$};
+      \path (6, 4.5) node[right] {$2^2P_{1/2}$};
+
+      % P3/2
+      % F3
+      \draw[line width=1] (0, 6.5) -- +(5, 0) node[right] {$F=3$};
+      % F2
+      \draw[line width=1] (0, 7.5) -- +(5, 0) node[right] {$F=2$};
+      % F1
+      \draw[line width=1] (0, 8.1) -- +(5, 0) node[right] {$F=1$};
+      % F0
+      \draw[line width=1] (0, 8.5) -- +(5, 0) node[right] {$F=0$};
+      \path (6, 7.5) node[right] {$2^2P_{3/2}$};
+
+      % D1
+      \draw[line width=1.5,->] (2, 5) -- (2, 1);
+      \path (2, 3) node[left,align=right] {$D1$\\$446.799\ 862\ 994(12)$THz\\ ($670.977\ 058\ 925(18)$nm)};
+
+      % D2
+      \draw[line width=1.5,->] (3, 6.5) -- (3, 1);
+      \path (3, 3) node[right,align=left] {$D2$\\$446.809\ 874\ 988(27)$THz\\ ($670.962\ 023\ 854(41)$nm)};
+
+      % S1/2
+      \draw[line width=1.5,->] (2.5, 1) -- (2.5, 0);
+      \path (2.5, .5) node[right] {$803.504\ 086\ 6(10)$MHz};
+
+      % P1/2
+      \draw[line width=1.5,->] (1.5, 5) -- (1.5, 4);
+      \path (1.5, 4.5) node[left] {$91.877(9)$MHz};
+
+      % P3/2
+      \draw[line width=1.5,->] (3.5, 7.5) -- (3.5, 6.5);
+      \path (3.5, 7) node[right] {$9.462(27)$MHz};
+      \draw[line width=1.5,->] (2.5, 8.1) -- (2.5, 7.5);
+      \path (2.5, 7.8) node[right] {$5.813(27)$MHz};
+      \draw[line width=1.5,->] (1.5, 8.5) -- (1.5, 8.1);
+      \path (1.5, 8.3) node[right] {$2.759(27)$MHz};
+    \end{tikzpicture}
+  \end{center}
+  \caption{Energy levels of Lithium-$7$\cite{lithium-lines}}
+  \label{li:lines}
+\end{figure}\\
 
 Zeeman effect
 

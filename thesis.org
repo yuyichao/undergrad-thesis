@@ -4,16 +4,16 @@
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* TODO Theory (6h)
+* TODO Theory (5h40min)
 ** DONE Overview
 ** TODO BEC (40min)
 *** DONE BEC in harmonic trap
 *** TODO BEC with interaction (40min)
-** TODO Lithium-7 atoms (20min)
+** DONE Lithium-7 atoms
 *** DONE Overview
 *** DONE Fine structure
 *** DONE Hyperfine structure
-*** TODO Zeeman effect (20min)
+*** DONE Zeeman effect
 ** TODO Cooling and traping (5h)
 *** DONE Overview
 *** DONE Zeeman slower

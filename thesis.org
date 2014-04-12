@@ -1,3 +1,4 @@
+* TODO All (13h40min)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
@@ -22,11 +23,12 @@
 *** TODO ?Dark State Pumping (1h)
 *** TODO Magnetic trap (1h)
 *** TODO ODT (1h)
-* TODO Experiment
-** TODO Laser system
-** TODO Spin-flip zeeman slower
-** TODO MOT and CMOT
-** TODO Gray Molasses
-** TODO Magnetic trap and evaporative cooling
-** TODO Evaporate in optical dipole trap
-** TODO BEC
+* TODO Experiment (8h)
+** TODO Laser system (1h)
+** TODO Vacuum chamber and magnetic field coils (1h)
+** TODO Spin-flip zeeman slower (1h)
+** TODO MOT and CMOT (1h)
+** TODO Gray Molasses (1h)
+** TODO Magnetic trap and evaporative cooling (1h)
+** TODO Evaporate in optical dipole trap (1h)
+** TODO BEC (1h)

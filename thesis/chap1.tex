@@ -206,6 +206,14 @@ The performance of the MOT is usually limited by the random kick from scattered 
 \subsection{Gray Molasses}\label{theory:gm}
 
 Since the $2^2P_{3/2}$ excited state of Lithium-$7$ we use for molasses cooling in the MOT does not have resolved hyperfine structure (Figure \ref{li:lines}). We cannot preform conventional polarization gradient cooling using the $D2$ line. Instead, we implement a gray molasses on the D1 transition. This scheme was first studied and demonstrated by Christophe Salomon\cite{gm-theory} to achieve sub-Doppler temperature on some alkali isotopes that are not amenable for conventional polarization cooling ($^7Li$, $^6Li$ and $^{40}K$). In this section, I am going to present a semi-quantitative explanation of this cooling scheme. See the original paper\cite{gm-theory} for more detail discussion.\\
+\\
+The gray molasses cooling uses three pairs of counter-propagating beams that can cool the cloud in all three dimensions. Like what we did for MOT, we will consider a $1-D$ case for simplicity. The model we will use has a pair of counter-propagating beams, each has a high intensity pumper, with a large blue detuning $\delta$ from the $F=2$ ($|2\rangle$) to $F'=2$ ($|3\rangle$) $D1$ transition, and a low intensity repumper, blue detuned from the $F=1$ ($|1\rangle$) to $F'=2$ $D1$ transition by the same detuning $\delta$. Let the Rabi frequency for the pumper and the repumper be $\Omega_2(x)$ and $\Omega_1(x)$ respectively.\\
+\\
+Just as any other laser cooling method, the performance of the gray molasses is determined by the balance between cooling force and heating from photon scattering. Since the two beams (pumper and repumper) satisfies the Raman resonance condition, the system has a dark state which is the superposition of $|1\rangle$ and $|2\rangle$,
+\eqar{
+  |NC\rangle=&\frac{\Omega_2|1\rangle-\Omega_1|2\rangle}{\sqrt{\Omega_1^2+\Omega_2^2}}
+}
+which will be the state most of the atoms will be pumped into. (The state is dark for stationary atoms and has a non-zero but small scattering rate for moving atoms.) Since the scattering is suppressed by the present of a dark state, the gray molasses produce little heating.\\
 \begin{figure}
   \begin{center}
     \begin{tikzpicture}
@@ -243,6 +251,12 @@ Since the $2^2P_{3/2}$ excited state of Lithium-$7$ we use for molasses cooling 
   \caption{Schematic of a $1D$ Gray Molasses.\cite{gm-theory}}
   \label{gm:dressed}
 \end{figure}\\
+The cooling effect of the gray molasses can be understood in the dressed atom picture for the atom and the pumper beam as shown in figure \ref{gm:dressed}, where,
+\eqar{
+  |2'\rangle=&\frac{\delta^2}{\delta^2+\Omega_2(x)^2}\paren{|2\rangle-\ui\Omega_2(x)|3\rangle}\\
+  |3'\rangle=&\frac{\delta^2}{\delta^2+\Omega_2(x)^2}\paren{|3\rangle-\ui\Omega_2(x)|2\rangle}
+}
+Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\rangle$ is small leaving $|3'\rangle$ a short lifetime and $|2'\rangle$ a longer lifetime. The two counter-propagating pumper beams create a standing wave which causes periodic AC-Stark shift in the dressed $|2'\rangle$ and $|3'\rangle$ states. For a repumper with the same or slightly smaller blue detuning compare to the pumper. It is the most closest to the resonance with the dressed states at the nodes of the standing wave where the mixing is minimized. Therefore, the repumper will most likely pumps atoms into the $|2'\rangle$ state (through $|3'\rangle$ as shown in figure \ref{gm:dressed}) at the node of the standing wave and the atoms will most likely exit the state at the anti-node of the standing wave where the lifetime of $|2'\rangle$ is the shortest because of the maximum mixing. Since potential enery for atoms in $|2'\rangle$ is minimized at the nodes and maximized at the anti-nodes the atoms will on average feel a damping force by climbing up the hill in $|2'\rangle$. The height of the hill, therefore the cooling force, is proportional to the laser intensity. Combined with the low scattering rate due to the dark state, the gray molasses can be used to quickly cool the cloud after MOT to sub-Doppler temperature.
 
 \subsection{Dark State Pumping}\label{theory:pump}
 

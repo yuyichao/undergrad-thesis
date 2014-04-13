@@ -23,6 +23,7 @@
 *** DONE Magnetic trap
 *** DONE ODT
 * TODO Experiment (8h)
+** DONE Intro
 ** TODO Laser system (1h)
 ** TODO Vacuum chamber and magnetic field coils (1h)
 ** TODO Spin-flip zeeman slower (1h)

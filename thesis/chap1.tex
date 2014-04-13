@@ -205,7 +205,47 @@ The performance of the MOT is usually limited by the random kick from scattered 
 
 \subsection{Gray Molasses}\label{theory:gm}
 
+Since the $2^2P_{3/2}$ excited state of Lithium-$7$ we use for molasses cooling in the MOT does not have resolved hyperfine structure (Figure \ref{li:lines}). We cannot preform conventional polarization gradient cooling using the $D2$ line. Instead, we implement a gray molasses on the D1 transition. This scheme was first studied and demonstrated by Christophe Salomon\cite{gm-theory} to achieve sub-Doppler temperature on some alkali isotopes that are not amenable for conventional polarization cooling ($^7Li$, $^6Li$ and $^{40}K$). In this section, I am going to present a semi-quantitative explanation of this cooling scheme. See the original paper\cite{gm-theory} for more detail discussion.\\
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}
+      % axis
+      \draw[line width=1.3,->] (-2, 0) -- (5, 0) node[below] {$x$};
+      \draw[line width=1.3,->] (-2, 0) -- ++(0, 8) node[above] {$E$};
+
+      % Dressed levels 1
+      \draw[line width=2] plot[id=x,domain=1:4,samples=1000] function{3 + 0.2 * sin(5 * x)} node[right] {$|3',n-1\rangle$};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{4.2 - 0.2 * sin(5 * x)};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{4.215 - 0.215 * sin(5 * x)} node[right] {$|2',n\rangle$};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{4.23 - 0.23 * sin(5 * x)};
+      \draw[dashed] (1, 3.986) -- ++(3, 0);
+
+      % Dressed levels 2
+      \draw[line width=2] plot[id=x,domain=1:4,samples=1000] function{6.5 + 0.2 * sin(5 * x)} node[right] {$|3',n\rangle$};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{7.7 - 0.2 * sin(5 * x)} node[right] {$|2',n+1\rangle$};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{7.715 - 0.215 * sin(5 * x)};
+      \draw[line width=1] plot[id=x,domain=1:4,samples=1000] function{7.73 - 0.23 * sin(5 * x)};
+      \draw[dashed] (1, 7.486) -- ++(3, 0);
+
+      % F1 states
+      \draw (0.5, 0.5) -- ++(-0.5, 0) node[left] {$|1,n-1\rangle$};
+      \draw (0.5, 3.5) -- ++(-0.5, 0) node[left] {$|1,n\rangle$};
+
+      % Repumper
+      \draw[red,line width=1,dashed] (pi / 2 - 0.25, 7.35) -- ++(0.5, 0);
+      \draw[red,line width=1,snake arrow] (0.25, 3.5) -- (pi / 2, 7.35);
+      \draw[red,line width=1,snake arrow] (pi / 2, 7.35) -- (pi / 2, 4);
+      \draw[red,line width=2.6] plot[id=x,domain=pi / 2:(pi * 0.7 + 0.1),samples=1000] function{4.215 - 0.215 * sin(5 * x)};
+      % Somehow math functions does not work correctly here.
+      \draw[red,line width=1,snake arrow] (pi * 0.7 + 0.1, 4.215 + 0.215 * 0.87758256189037287) -- (0.25, 0.5);
+    \end{tikzpicture}
+  \end{center}
+  \caption{Schematic of a $1D$ Gray Molasses.\cite{gm-theory}}
+  \label{gm:dressed}
+\end{figure}\\
+
 \subsection{Dark State Pumping}\label{theory:pump}
+
 At the end of Laser cooling, the atoms are distributed in different ground states.\\
 In order to trap in MT, need to go to 2, 2 / 2, 1 which are the only trappable states at both low field and high field.\\
 Choose 2, 2 because we can use dark state pumping which ...

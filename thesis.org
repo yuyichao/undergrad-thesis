@@ -1,11 +1,11 @@
-* TODO All (11h40min)
+* TODO All (10h40min)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* TODO Theory (3h40min)
+* TODO Theory (2h40min)
 ** DONE Overview
 ** TODO BEC (40min)
 *** DONE BEC in harmonic trap
@@ -15,12 +15,11 @@
 *** DONE Fine structure
 *** DONE Hyperfine structure
 *** DONE Zeeman effect
-** TODO Cooling and traping (3h)
+** TODO Cooling and traping (2h)
 *** DONE Overview
 *** DONE Zeeman slower
 *** DONE MOT
 *** DONE Gray Molasses
-*** TODO ?Dark State Pumping (1h)
 *** TODO Magnetic trap (1h)
 *** TODO ODT (1h)
 * TODO Experiment (8h)

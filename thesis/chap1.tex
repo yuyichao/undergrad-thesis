@@ -259,6 +259,28 @@ The cooling effect of the gray molasses can be understood in the dressed atom pi
 Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\rangle$ is small leaving $|3'\rangle$ a short lifetime and $|2'\rangle$ a longer lifetime. The two counter-propagating pumper beams create a standing wave which causes periodic AC-Stark shift in the dressed $|2'\rangle$ and $|3'\rangle$ states. For a repumper with the same or slightly smaller blue detuning compare to the pumper. It is the most closest to the resonance with the dressed states at the nodes of the standing wave where the mixing is minimized. Therefore, the repumper will most likely pumps atoms into the $|2'\rangle$ state (through $|3'\rangle$ as shown in figure \ref{gm:dressed}) at the node of the standing wave and the atoms will most likely exit the state at the anti-node of the standing wave where the lifetime of $|2'\rangle$ is the shortest because of the maximum mixing. Since potential enery for atoms in $|2'\rangle$ is minimized at the nodes and maximized at the anti-nodes the atoms will on average feel a damping force by climbing up the hill in $|2'\rangle$. The height of the hill, therefore the cooling force, is proportional to the laser intensity. Combined with the low scattering rate due to the dark state, the gray molasses can be used to quickly cool the cloud after MOT to sub-Doppler temperature.
 
 \subsection{Evaporation in Static Magnetic Trap}\label{theory:mt}
+
+The density and temperature of a laser cooled cloud is usually limited by the scattering of photons. Therefore, in order to reach quantum degeneracy, one usually need to use a way that can cool the atoms without shining resonant light onto them. The way we use in our experiment is evaporative cooling in a magnetic trap and an optical dipole trap. In this section, I will describe the theory of static magnetic quadrupole trap and radio frequency evaporation and the theory of evaporation in an optical dipole trap will be discussed in the next section.\\
+\\
+The static magnetic trap, as the name suggested, is created using static magnetic field and the Zeeman effect of the atoms. Assuming a monotonic the Zeeman effect, the atoms will be trapped at an extremum of the field. Since the magnetic field in the vacuum satisfies the sourceless Maxwell equation, we have,
+\eqar{
+  0=&\nabla\times\paren{\nabla\times B}\\
+  =&\nabla\paren{\nabla\cdot B}-\nabla^2B\\
+  =&-\nabla^2B\\
+  \nabla^2\paren{B^2}=&2\nabla\paren{B\cdot\nabla B}\\
+  =&2\paren{\nabla B}^2 + 2B\cdot\nabla^2B\\
+  =&2\paren{\nabla B}^2\\
+  \geqslant&0
+}
+Therefore, the only local extremum that is possible for a static magnetic field in the vacuum is a local minimum and only states with a positive Zeeman shift (low field seeking) can be trapped magnetically.\\
+\\
+The static magnetic field with a local minimum in the center can be implemented in many different ways. The configuration used in this experiment is a quadrupole field created by a set of Helmholtz coils carrying opposite current, which provides the tighter confinement compare to other configurations. Closed to the center of the trap, the magnetic field can be expressed as,
+\eqar{
+  B_x=&B'x\\
+  B_y=&B'y\\
+  B_z=&-2B'z
+}
+Since the magnetic field is $0$ at the center of the trap where all the Zeeman levels are degenerate, spin-flip of atoms (Majorana loss) occurs in the center of a quadrupole trap. This problem is fixed in the experiment by plugging the hole with a reposive blue detuned laser beam.\\
 \begin{figure}
   \begin{center}
     \subfigure[The beginning of RF evaporation]{
@@ -273,10 +295,10 @@ Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\ran
         \draw[line width=1,->] (-0, 0) -- ++(0, 8) node[above] {$E$};
 
         % 2, 2
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|2, 2\rangle$};
 
         % 1, 1
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|1, 1\rangle$};
 
         % 2, 2 bend
         \draw[color=blue] plot[id=x,domain=-3.5:3.5,samples=1000] function{4 - (sqrt((abs(x) - 3)**2 + 1.0 / 9) - 3)};
@@ -302,10 +324,10 @@ Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\ran
         \draw[line width=1,->] (-0, 0) -- ++(0, 8) node[above] {$E$};
 
         % 2, 2
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|2, 2\rangle$};
 
         % 1, 1
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|1, 1\rangle$};
 
         % 2, 2 bend
         \draw[color=blue] plot[id=x,domain=-3.5:3.5,samples=1000] function{4 - (sqrt((abs(x) - 1)**2 + 1.0 / 9) - 1)};
@@ -321,15 +343,8 @@ Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\ran
   \end{center}
   \caption{RF evaporation in magnetic trap. The temperature goes down and the phase space density goes up during evaporation.}
   \label{mt:evap}
-\end{figure}
-
-Trapable states
-
-quadruple trap
-
-plug
-
-Power law?
+\end{figure}\\
+After trapping the atoms with the magnetic field, we use radio frequency induced spin-flip to evaporate the cloud. As shown in figure \ref{mt:evap}, the $|2, 2\rangle$ has a positive Zeeman effect whereas the $|1, 1\rangle$ state has a negetive Zeeman shift. After all the atoms are trapped in the $|2, 2\rangle$ state, a RF field that is blue detuned to the zero field resonance is applied which mixes the two states and turns the potential curve around at the resonance field. As a result, the depth of the trap is lowered and atoms which has higher energy can now escape from the trap. If the RF knife is placed much higher than the thermal energy $k_BT$, each leaving atoms will carry away energy a lot higher than the everage value leaving a lower average energy, therefore lower temperature, for the atoms remaining in the trap. After the cloud gets colder, less and less atoms will have the energy to pass the RF knife, at which point the RF frequency can be sweep down to accelerate the evaporation. In order for the evaporative cooling to work effeciently, a high elastic collision rate (high rate for creating atoms with high energy) is also necessary.
 
 \subsection{Evaporation in Optical Dipole Trap}\label{theory:odt}
 AC Stark Shift

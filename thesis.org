@@ -1,15 +1,15 @@
-* TODO All (4h40min)
+* TODO All (4h)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* TODO Theory (40min)
+* DONE Theory
 ** DONE Overview
-** TODO BEC (40min)
+** DONE BEC
+*** DONE Overview
 *** DONE BEC in harmonic trap
-*** TODO BEC with interaction (40min)
 ** DONE Lithium-7 atoms
 *** DONE Overview
 *** DONE Fine structure
@@ -23,7 +23,7 @@
 *** DONE Magnetic trap
 *** DONE ODT
 * TODO Experiment (4h)
-** DONE Intro
+** DONE Overview
 ** DONE Laser system
 ** DONE Vacuum chamber and magnetic field coils
 ** DONE MOT and CMOT

@@ -1,6 +1,6 @@
 \chapter{Experimental Setup and Results}
 
-In this chapter, I will describe our experimental setup and results. It includes a breif discussion of our optical tables setup (\ref{exp:laser-table} and \ref{exp:machine-table}), the implementation, optimization and performance of each steps (\ref{exp:zeeman}, \ref{exp:mot}, \ref{exp:gm}, \ref{exp:pump}, \ref{exp:mt} and \ref{exp:odt}) and finally some basic characteristic of our BEC (\ref{exp:bec}).
+In this chapter, I will describe our experimental setup and results. It includes a breif discussion of our optical tables setup (\ref{exp:laser-table} and \ref{exp:machine-table}), the implementation, optimization and performance of each steps (\ref{exp:mot}, \ref{exp:gm}, \ref{exp:pump}, \ref{exp:mt} and \ref{exp:odt}) and finally some basic characteristic of our BEC (\ref{exp:bec}).
 
 \section{Laser System}\label{exp:laser-table}
 The laser table is where we prepare all the light resonance with the Lithium-$7$ transition ($\approx671nm$). As discussed in the previous chapter, there are four distinct lines that we need in the experiment, the combination of $D1$, $D2$ with $F1$, $F2$. At a certain time, we need either $D1$ or $D2$ light with the probability of using both $F1$ and $F2$ at the same time and the laser table is designed to do just this.\\
@@ -132,13 +132,48 @@ In our experiment, a lot of different field configurations are used for differen
   \label{exp:coil-config}
 \end{table}
 
-\section{Spin Flip Zeeman Slower}\label{exp:zeeman}
-
 \section{Magneto-Optical Trap (MOT) and Compressed-MOT}\label{exp:mot}
 
-CMOT
+The MOT loading is optimized by changing the parameters of the lasers to maximize the number of atoms in the MOT after $6$ seconds of loading. The optimum settings we have found are listed in table \ref{exp:mot-param} and the performance of our MOT can be found in table \ref{exp:laser-cooling}.\\
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}\hline
+      MOT power&Repumper power&MOT detuning&Repumper detuning&MOT Current\\\hline
+      $16$mW&$7$mW&$-38.5$mW&$-28$mW&$57$A\\\hline
+    \end{tabular}
+  \end{center}
+  \caption{MOT parameters}
+  \label{exp:mot-param}
+\end{table}\\
+Since our MOT is mainly optimized for loading rate, it is not necessarily optimized for density and cooling. Therefore, we added a compresse-MOT (CMOT) step after the MOT in order to increase the density and decrease the temperature. In the CMOT step, we ramp the MOT frequency closer to resonance in $4.5$ms and decrease the intensity of the repumper. As a result, the cloud is compressed by radiation pressure and pumped to the $F1$ state. The temperature of the cloud is also decreased because of the decrease in scattering. Figure \ref{exp:cmot-image} shows the F pumping effect in the CMOT and the performance of the CMOT is listed in table \ref{exp:laser-cooling}.
+\begin{figure}
+  \begin{center}
+    \subfigure[CMOT imaged with $F2$ light without $F$ pumping.]{
+      \includegraphics[width=5cm]{cmot-nopump.png}
+    }
+    \subfigure[CMOT imaged with $F2$ light after $F$ pump into $F2$.]{
+      \includegraphics[width=5cm]{cmot-pump.png}
+    }
+  \end{center}
+  \caption{Image of the CMOT. Atoms are pumped into the $F1$ states.}
+  \label{exp:cmot-image}
+\end{figure}
 
 \section{Gray Molasses}\label{exp:gm}
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}\hline
+      Step&Atom Numbers&Temperature(K)&Density($\text{cm}^{-3}$)\\\hline
+      Oven&-&$760$&-\\\hline
+      Zeeman Slower&-&$0.5$&-\\\hline
+      MOT&$2\cdot10^{10}$&$1.5\cdot10^{-3}$&$1\cdot10^{11}$\\\hline
+      CMOT&$2\cdot10^{10}$&$1\cdot10^{-3}$&$2\cdot10^{11}$\\\hline
+      Gray Molasses&$1\cdot10^{10}$&$1\cdot10^{-4}$&$2\cdot10^{11}$\\\hline
+    \end{tabular}
+  \end{center}
+  \caption{Laser cooling performance.}
+  \label{exp:laser-cooling}
+\end{table}
 
 \section{Dark State Pumping}\label{exp:pump}
 

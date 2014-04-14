@@ -20,9 +20,10 @@ In the $F1$, $F2$ path, a tandem and a double pass are used to continiously shif
 In this section, I am going to describe some important setup on the machine table where out vacuum chamber sits on.
 
 \subsection{Optical Access of the Vacuum Chamber}\label{exp:chamber}
+The windows and connections except the top and bottom window on our main vacuum chamber is shown in figure \ref{chamber-light}. There are in total $6$ MOT/Gray Molasses beams, $2$ ODT beams, $3$ Imaging beams, a plug and a Zeeman slower beam going into the chamber. When multiple colors need to be sent in through the same window, they are combined outside the vacuum chamber using appropriate dichroic.
 \begin{figure}
   \begin{center}
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=0.8]
       % ODT windows
       \draw[rotate around={22.5:(0, 0)},line width=2] (-4.3, -.35) rectangle (4, .35);
       \draw[rotate around={-22.5:(0, 0)},line width=2] (-4.3, -.35) rectangle (4, .35);
@@ -80,8 +81,34 @@ In this section, I am going to describe some important setup on the machine tabl
   \caption{Top View of the Vacuum Chamber (Top/Bottom MOT/Gray Molasses beams not included, not to scale).}
   \label{chamber-light}
 \end{figure}
-The windows and connections except the top and bottom window on our main vacuum chamber is shown in figure \ref{chamber-light}. There are in total $6$ MOT/Gray Molasses beams, $2$ ODT beams, $3$ Imaging beams, a plug and a Zeeman slower beam going into the chamber. When multiple colors need to be sent in through the same window, they are combined outside the vacuum chamber using appropriate dichroic.
 \subsection{MOT-Gray Molasses Cage}\label{exp:mot-cage}
+The delivery of the MOT and gray molasses beam from the two in-coupler on the laser table to the six output on the machine table is done with a polarization maintaining evanescent wave fiber splitter which takes the light from the two input fibers and split them equally into the six output fibers. However, the MOT beams and the gray molasses beams have different requirement in beam sizes. On one hand, the MOT needs a bigger beam size for a bigger capture volume. On the other hand, as discussed earlier, for the gray molasses to work effectively, high intensity, therefore smaller beam size, is required. In order to have a different beam size for the two light coming out of the same fiber, we send in the two light with orthogonal polarizations (figure \ref{exp:laser-table-design}) and add polarization dependent beam expenders after the fiber output to shape the two beams differently. This beam shaping is done with a cage system shown in figure \ref{mot-cage-design}
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[line width=4,red] (-1, 1) -- (5, 1) node[above] {MOT} -- (10, 1);
+
+      \draw[line width=2,blue] (-1, 1) -- (1.5, 1) -- ++(0, -3) -- (6.5, -2) node[above,align=center] {Gray\\Molasses} -- (7.5, -2) -- (7.5, 1) -- (10, 1);
+
+      \draw[line width=1] (0, 0) -- ++(0, 2) node[above] {$\frac{\lambda}{2}$};
+      \draw (0.5, 2) rectangle ++(2, -2) -- ++(-2, 2) node[above right] {PBS};
+      \draw[line width=1] (3, 0) -- ++(0, 2) node[above] {$\frac{\lambda}{2}$};
+      \draw[line width=1,<->] (3.5, 0) -- ++(0, 2);
+      \draw[line width=1,<->] (6, 0) -- ++(0, 2);
+      \draw (6.5, 0) rectangle ++(2, 2) node[above left] {PBS} -- ++(-2, -2);
+      \draw[line width=1] (9, 0) -- ++(0, 2) node[above] {$\frac{\lambda}{4}$};
+
+      \draw[line width=2] (2.5, -3) -- ++(-2, 2);
+      \draw[line width=1] (3, -3) -- ++(0, 2) node[above] {$\frac{\lambda}{2}$};
+      \draw[line width=1,<->] (3.5, -3) -- ++(0, 2);
+      \draw[line width=1,<->] (5, -2.75) -- ++(0, 1.5);
+      \draw[line width=2] (8.5, -1) -- ++(-2, -2);
+    \end{tikzpicture}
+  \end{center}
+  \caption{MOT/Gray Molasses Cage.}
+  \label{mot-cage-design}
+\end{figure}
+
 \subsection{Main Coils Configuration}\label{exp:coil}
 \begin{figure}
   \begin{center}

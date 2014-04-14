@@ -17,7 +17,79 @@ In the $F1$, $F2$ path, a tandem and a double pass are used to continiously shif
 
 \section{Vacuum Chamber and Main Coils Configuration}\label{exp:machine-table}
 
+In this section, I am going to describe some important setup on the machine table where out vacuum chamber sits on.
+
+\subsection{Optical Access of the Vacuum Chamber}\label{exp:chamber}
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}
+      % ODT windows
+      \draw[rotate around={22.5:(0, 0)},line width=2] (-4.3, -.35) rectangle (4, .35);
+      \draw[rotate around={-22.5:(0, 0)},line width=2] (-4.3, -.35) rectangle (4, .35);
+
+      % MOT windows
+      \draw[rotate around={45:(0, 0)},line width=2] (-3.2, -.7) rectangle (3.2, .7);
+      \draw[rotate around={-45:(0, 0)},line width=2] (-3.2, -.7) rectangle (3.2, .7);
+
+      % Slower windows
+      \draw[line width=2] (0, -.8) rectangle (3.2, .8);
+      \draw[line width=2] (-4, -.3) rectangle (0, .3);
+
+      % Imaging windows
+      \draw[line width=2] (-1.2, 0) rectangle (1.2, 3.2);
+      \draw[line width=2] (-.4, 0) rectangle (.4, -3.2);
+
+      % Main Chamber
+      \draw[fill=white,line width=2] (0, 0) circle (3);
+
+      % Coils
+      \draw[line width=1,fill=brown] (0, 0) circle (2.5);
+      \draw[line width=1] (0, 0) circle (2.3);
+      \draw[line width=1] (0, 0) circle (2.1);
+      \draw[line width=1] (0, 0) circle (1.9);
+      \draw[line width=1] (0, 0) circle (1.7);
+      \draw[line width=1,fill=white] (0, 0) circle (1.5);
+      \path (0, 2) node[align=center,white] {\textbf{Main}\\\textbf{Coils}};
+
+      % MOT beams
+      \draw[line width=2,snake arrow,rotate around={45:(0, 0)},red] (6, 0) node[right] {MOT/GM} -- ++(-2.5, 0);
+      \draw[line width=2,snake arrow,rotate around={-45:(0, 0)},red] (6, 0) node[right] {MOT/GM} -- ++(-2.5, 0);
+      \draw[line width=2,snake arrow,rotate around={135:(0, 0)},red] (6, 0) node[right] {MOT/GM} -- ++(-2.5, 0);
+      \draw[line width=2,snake arrow,rotate around={-135:(0, 0)},red] (6, 0) node[right] {MOT/GM} -- ++(-2.5, 0);
+
+      % Imaging
+      \draw[line width=1,snake arrow,rotate around={-90:(0, 0)},red] (6, 0) node[right,align=center] {Imaging/\\Dark State Pumping} -- ++(-2.5, 0);
+
+      % ODT1
+      \draw[line width=4,snake arrow,rotate around={22.5:(0, 0)}] (6, 0) node[right] {ODT} -- ++(-2, 0);
+      \draw[line width=.5,snake arrow,rotate around={22.5:(0, 0)},red] (6, -0.2) -- ++(-2, 0);
+      \path[rotate around={22.5:(0, 0)},red] (5, 0) node[below right,align=center] {Side\\Imaging};
+
+      % ODT2
+      \draw[line width=4,snake arrow,rotate around={-22.5:(0, 0)}] (6, 0) node[right] {ODT} -- ++(-2, 0);
+      \draw[line width=.5,snake arrow,rotate around={-22.5:(0, 0)},red] (6, 0.2) -- ++(-2, 0);
+      \path[rotate around={-22.5:(0, 0)},red] (5, 0) node[above right,align=center] {Side\\Imaging};
+      \draw[line width=3,snake arrow,rotate around={-22.5:(0, 0)},green] (6, -0.3) -- ++(-2, 0);
+      \path[rotate around={-22.5:(0, 0)},green] (5, -0.3) node[below left] {Plug};
+
+      % Slower
+      \draw[line width=2,snake arrow,red] (6, 0) node[right,align=center] {Zeeman\\Slower} -- ++(-2.5, 0);
+      \draw[line width=4,->,rotate around={180:(0, 0)}] (6, 0) node[left,align=center] {Atoms\\From Oven} -- ++(-2, 0);
+    \end{tikzpicture}
+  \end{center}
+  \caption{Top View of the Vacuum Chamber (Top/Bottom MOT/Gray Molasses beams not included, not to scale).}
+  \label{chamber-light}
+\end{figure}
+The windows and connections except the top and bottom window on our main vacuum chamber is shown in figure \ref{chamber-light}. There are in total $6$ MOT/Gray Molasses beams, $2$ ODT beams, $3$ Imaging beams, a plug and a Zeeman slower beam going into the chamber. When multiple colors need to be sent in through the same window, they are combined outside the vacuum chamber using appropriate dichroic.
 \subsection{MOT-Gray Molasses Cage}\label{exp:mot-cage}
+\subsection{Main Coils Configuration}\label{exp:coil}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=12cm]{BEC5_coils.pdf}
+  \end{center}
+  \caption{Main Coils Control Circuit}
+  \label{exp:coil-control}
+\end{figure}
 
 \section{Spin Flip Zeeman Slower}\label{exp:zeeman}
 

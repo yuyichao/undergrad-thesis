@@ -1,4 +1,4 @@
-* TODO All (4h)
+* TODO All (3h)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
@@ -22,12 +22,13 @@
 *** DONE Gray Molasses
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (4h)
+* TODO Experiment (3h)
 ** DONE Overview
 ** DONE Laser system
 ** DONE Vacuum chamber and magnetic field coils
 ** DONE MOT and CMOT
 ** DONE Gray Molasses
+** DONE Dark State Pumping
 ** TODO Magnetic trap and evaporative cooling (1h)
 ** TODO Evaporate in optical dipole trap (1h)
 ** TODO BEC (1h)

@@ -27,7 +27,7 @@
 ** DONE Laser system
 ** DONE Vacuum chamber and magnetic field coils
 ** DONE MOT and CMOT
-** TODO Gray Molasses (1h)
+** DONE Gray Molasses
 ** TODO Magnetic trap and evaporative cooling (1h)
 ** TODO Evaporate in optical dipole trap (1h)
 ** TODO BEC (1h)

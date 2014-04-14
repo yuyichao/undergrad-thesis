@@ -160,6 +160,32 @@ Since our MOT is mainly optimized for loading rate, it is not necessarily optimi
 \end{figure}
 
 \section{Gray Molasses}\label{exp:gm}
+The gray molasses step is used to cool the CMOT cloud further before transfering to the magnetic trap for evaporative cooling. Since the gray molasses beams have a smaller size ($d\approx5$mm), the beams need to be carefully aligned with the cloud which has a similar diameter. In our experiment, it is done putting F2 light in each gray molasses beam individually and imaging the overlap between the beam and the CMOT cloud directly. Figure \ref{exp:gm-align-nopump} shows the CMOT atoms after pumped into $F2$ state imaging with $F2$ light. After we pump the cloud with $F2$ light from one of the gray molasses beam path, the image looks like figure \ref{exp:gm-align-before}, in which the missing part is pumped back into $F1$ by the gray molasses beam and is invisible on the image. We then maximum the overlap between the beam and the cloud by minimize the atoms left in the image. Figure \ref{exp:gm-align-after} shows the same image after the gray molasses beam is properly aligned. After we repeated this on all the gray molasses beams, we took time of flight images while scanning the frequencies of the light. As shown in figure \ref{exp:gm-ddet}, a clear decrease in temperature (a decrease in time of flight size) can be seen just as what we expected from the theory\ref{theory:gm} and the experimental result from other groups\cite{gm-theory}.
+\begin{figure}
+  \begin{center}
+    \subfigure[CMOT atoms pumped to $F2$]{
+      \includegraphics[width=6cm]{gm1-nopump.png}
+      \label{exp:gm-align-nopump}
+    }
+    \subfigure[CMOT atoms pumped to $F2$ and hit with one of the gray molasses beam before alignment]{
+      \includegraphics[width=6cm]{gm1-before.png}
+      \label{exp:gm-align-before}
+    }
+    \subfigure[CMOT atoms pumped to $F2$ and hit with one of the gray molasses beam after alignment]{
+      \includegraphics[width=4.5cm]{gm1-after.png}
+      \label{exp:gm-align-after}
+    }
+  \end{center}
+  \caption{Images used to align the gray molasses beams.}
+  \label{exp:gm-align}
+\end{figure}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=11cm]{gm-ddet.png}
+  \end{center}
+  \caption{Time of flight image for gray molasses with different relative detuning (in MHz) between the pumper and repumper. (The voltages in the image is the control voltage we use to tweak the frequency.)}
+  \label{exp:gm-ddet}
+\end{figure}
 \begin{table}
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|}\hline
@@ -177,8 +203,8 @@ Since our MOT is mainly optimized for loading rate, it is not necessarily optimi
 
 \section{Dark State Pumping}\label{exp:pump}
 
-At the end of Laser cooling, the atoms are distributed in different ground states.\\
-In order to trap in MT, need to go to 2, 2 / 2, 1 which are the only trappable states at both low field and high field.\\
+At the end of Laser cooling, the atoms are distributed in different ground states hperfine levels (mostly $F=1$ after gray molasses). In order to transfer into the magnetic trap, the atoms need to be in a trappable state
+, need to go to 2, 2 / 2, 1 which are the only trappable states at both low field and high field.\\
 Choose 2, 2 because we can use dark state pumping which ...
 
 Dark State pumping with D1 light

@@ -82,7 +82,7 @@ The windows and connections except the top and bottom window on our main vacuum 
   \label{chamber-light}
 \end{figure}
 \subsection{MOT-Gray Molasses Cage}\label{exp:mot-cage}
-The delivery of the MOT and gray molasses beam from the two in-coupler on the laser table to the six output on the machine table is done with a polarization maintaining evanescent wave fiber splitter which takes the light from the two input fibers and split them equally into the six output fibers. However, the MOT beams and the gray molasses beams have different requirement in beam sizes. On one hand, the MOT needs a bigger beam size for a bigger capture volume. On the other hand, as discussed earlier, for the gray molasses to work effectively, high intensity, therefore smaller beam size, is required. In order to have a different beam size for the two light coming out of the same fiber, we send in the two light with orthogonal polarizations (figure \ref{exp:laser-table-design}) and add polarization dependent beam expenders after the fiber output to shape the two beams differently. This beam shaping is done with a cage system shown in figure \ref{mot-cage-design}
+The delivery of the MOT and gray molasses beam from the two in-coupler on the laser table to the six output on the machine table is done with a polarization maintaining evanescent wave fiber splitter which takes the light from the two input fibers and split them equally into the six output fibers. However, the MOT beams and the gray molasses beams have different requirement in beam sizes. On one hand, the MOT needs a bigger beam size for a bigger capture volume. On the other hand, as discussed earlier, for the gray molasses to work effectively, high intensity, therefore smaller beam size, is required. In order to have a different size for the two beams coming out of the same fiber, we send in the two beams with orthogonal polarizations (figure \ref{exp:laser-table-design}) and add polarization dependent beam expenders after the fiber output to shape the two beams differently. This beam shaping is done with a cage system shown in figure \ref{mot-cage-design}. The upper beam path is used for expanding the MOT beam whereas the lower path shapes the gray molasses beam to a smaller size. Each of the four lenses can slide in the cage, which are used to tweak the size and divergence of the beams. The alignment between beams is done with the two bottom mirrors and the two half waveplates between the two polarization beam splitter cubes are used to balance the intensities.
 \begin{figure}
   \begin{center}
     \begin{tikzpicture}
@@ -110,6 +110,7 @@ The delivery of the MOT and gray molasses beam from the two in-coupler on the la
 \end{figure}
 
 \subsection{Main Coils Configuration}\label{exp:coil}
+In our experiment, a lot of different field configurations are used for different purpose. All of these configurations have to be implemented using our main coil which has five independent layers closed to the Helmholtz condition on each sides with sub milisecond switching time between them. A modified H-bridge (figure \ref{exp:coil-control}) was build with IGBTs in order to accomplish these goals using the minimum amount of independent layers, IGBTs and power supplies. The list of possible configurations are shown in table \ref{exp:coil-config}.
 \begin{figure}
   \begin{center}
     \includegraphics[width=12cm]{BEC5_coils.pdf}
@@ -117,6 +118,19 @@ The delivery of the MOT and gray molasses beam from the two in-coupler on the la
   \caption{Main Coils Control Circuit}
   \label{exp:coil-control}
 \end{figure}
+\begin{table}
+  \begin{center}
+    \begin{tabular}{|c|c|c|}\hline
+      \multirow{2}{*}{Closed switches(IGBTs)}& \multicolumn{2}{c|}{Usage of the power supply} \\\hhline{~--}
+      &Lambda&Sorenson\\\hline
+      1, 3, 5&-&\begin{tabular}{@{}c@{}}Quadrupole field with\\layer 3 for MOT and ODT\\clean up (\ref{exp:odt})\end{tabular}\\\hline
+      2, 3, 5&\begin{tabular}{@{}c@{}}Quadrupole field with\\layer 1, 2, 3 and 4 for\\magnetic trap\end{tabular}&-\\\hline
+      1, 2, 4, 6&\begin{tabular}{@{}c@{}}Homogenous Feshbach resonance\\field with layer 1 and 2\end{tabular}&\begin{tabular}{@{}c@{}}Field gradience on top of\\the bias field with layer 3\\for tilt and levitation.\end{tabular}\\\hline
+    \end{tabular}
+  \end{center}
+  \caption{List of coil configurations}
+  \label{exp:coil-config}
+\end{table}
 
 \section{Spin Flip Zeeman Slower}\label{exp:zeeman}
 

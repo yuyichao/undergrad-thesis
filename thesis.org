@@ -1,4 +1,4 @@
-* TODO All (7h40min)
+* TODO All (6h40min)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
@@ -22,10 +22,10 @@
 *** DONE Gray Molasses
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (7h)
+* TODO Experiment (6h)
 ** DONE Intro
 ** DONE Laser system
-** TODO Vacuum chamber and magnetic field coils (1h)
+** DONE Vacuum chamber and magnetic field coils
 ** TODO Spin-flip zeeman slower (1h)
 ** TODO MOT and CMOT (1h)
 ** TODO Gray Molasses (1h)

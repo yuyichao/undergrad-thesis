@@ -203,17 +203,62 @@ The gray molasses step is used to cool the CMOT cloud further before transfering
 
 \section{Dark State Pumping}\label{exp:pump}
 
-At the end of Laser cooling, the atoms are distributed in different hperfine levels not all of which are trappable. In order to transfer to and evaporate in the magnetic trap, all the atoms have to be in a single trappable state. Making use of the dark state in the $D1$ line with $\sigma^+$ light, we use the dark state pumping to transfer the atoms into the $|2, 2\rangle$ state without significant heating. In order to minimize rescattering of the pumping light, the pumping light is blue detuned by $\delta_{F1}=20\text{MHz}$ and $\delta_{F2}=34\text{MHz}$. Figure \ref{exp:mf-pump} shows the atoms after different pumping time imaged with $D1F2$ $\sigma^+$ light. The initial increase in atom number shows atoms being pumped into $F2$ and the slower decay is when they are going into the $|2, 2\rangle$ state invisible to the imaging light.
+At the end of Laser cooling, the atoms are distributed in different hperfine levels not all of which are trappable. In order to transfer to and evaporate in the magnetic trap, all the atoms have to be in a single trappable state. Making use of the dark state in the $D1$ line with $\sigma^+$ light, we use the dark state pumping to transfer the atoms into the $|2, 2\rangle$ state without significant heating. In order to minimize rescattering of the pumping light, the pumping light is blue detuned by $\delta_{F1}=20\text{MHz}$ and $\delta_{F2}=34\text{MHz}$. Figure \ref{exp:mf-pump-time} shows the atoms after different pumping time imaged with $D1F2$ $\sigma^+$ light. The initial increase in atom number shows atoms being pumped into $F2$ and the slower decay is when they are going into the $|2, 2\rangle$ state invisible to the imaging light.
 \begin{figure}
   \begin{center}
     \includegraphics[width=8cm]{mf-pump.png}
   \end{center}
   \caption{}
-  \label{exp:mf-pump}
+  \label{exp:mf-pump-time}
 \end{figure}
 
-\section{Static Magnetic Trap}\label{exp:mt}
+\section{Magnetic Trap}\label{exp:mt}
+When the atoms are in the magnetic trap, the center of the trap need to be plugged in order to avoid Majorana loss. This is done with a $10$W $532$nm green laser beam, focused to $20\mu m$ at the center of the trap. In order to keep it aligned for different trap gradient, we zero the transverse magnetic field by measuring the center position of a small cloud in the magnetic trap with different gradients and different bias field. Figure \ref{exp:field-zeroing} shows the result of this measurement. We pick the bias field with the smallest displacement at different gradient, for which the center of the trap moves by smaller than one pixel ($20\mu m$). Figure \ref{exp:plug-power} shows the number of atom after the magnetic trap, the saturation of the atom number with $6$W of plug power shows that we have successful suppressed the Majorana loss. Due to the high inelastic collision rate, low elasic collision rate of Lithium-$7$ and the atom number fluctuation in our experiment, it is hard to optimize the RF evaporation purely experimentally. Instead, the evaporation in our experiment is optimized using numeric simulation. After $2.5$s of RF evaporation, we are left with $6\cdot10^7$ atoms with a temperature of $4\mu$K and a density of $10^{12}\text{cm}^{-3}$.
+\begin{figure}
+  \begin{center}
+    \subfigure[$x$ direction]{
+      \includegraphics[width=5cm]{field-zeroing-x.png}
+    }
+    \subfigure[$y$ direction]{
+      \includegraphics[width=5cm]{field-zeroing-y.png}
+    }
+  \end{center}
+  \caption{Precise Field Zeroing in Magnetic trap}
+  \label{exp:field-zeroing}
+\end{figure}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=9cm]{plug-power.png}
+  \end{center}
+  \caption{Saturation of the Plug Laser Power.}
+  \label{exp:plug-power}
+\end{figure}
 
-\section{Optical Dipole Trap}\label{exp:odt}
+\section{BEC in Optical Dipole Trap}\label{exp:odt}
 
-\section{Bose-Einstein Condensate}\label{exp:bec}
+After evaporation in the magnetic trap, we transfer the atoms into a optical dipole trap (ODT) created with two $15$W $1064$nm laser beams. The transfer need to be adiabatic in order to minimize heating and maximize transfer effeciency. After exploring different transfer schemes, the best method we have found is to turn on the ODT in full power before evaporating in the magnetic trap and ramp down the magnetic trap after evaporation in $200$ms. In this way, we can accumulate $2\cdot10^7$ atoms in the ODT at a temperature of $20\mu K$.\\
+\\
+We put the atoms from $|2, 2\rangle$ state to $|1, 1\rangle$ state using a Landao-Zener sweep with RF frequency. Figure \ref{exp:landao-zener} shows the atom number in $|2, 2\rangle$ versus starting frequency of a $1$MHz wide RF scan in a magnetic field about $1$G. We hit the resonance at $806.25$MHz and the transfer effeciency is better than $80\%$.\\
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=9cm]{landao-zener.png}
+  \end{center}
+  \caption{Landao-Zener Sweep.}
+  \label{exp:landao-zener}
+\end{figure}\\
+The evaporation in the ODT is aided by a Feshbach resonance. We measure the resonance using the increase in three-body loss rate. Figure \ref{exp:feshbach} shows the atom number after a certain hold time in the ODT with different Feshbach field. The resonance occurs at $285$A. By comparing the resonance point with know data for the scattering length around the resonance, we do our evaporation using a Feshbach current of $\approx260$A corresponding to a reasonably large scattering length ($\approx100a_0$).
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=9cm]{feshbach.png}
+  \end{center}
+  \caption{Feshbach Resonance in $|1, 1\rangle$ state.}
+  \label{exp:feshbach}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=9cm]{bec.png}
+  \end{center}
+  \caption{BEC with thermal wing.}
+  \label{exp:bec-image}
+\end{figure}

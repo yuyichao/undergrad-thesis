@@ -1,4 +1,4 @@
-* TODO All (6h)
+* TODO All (2h)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
@@ -28,8 +28,8 @@
 ** DONE Vacuum chamber and magnetic field coils
 *** DONE Main Coil Configuration
 ** DONE MOT and CMOT
-** TODO Gray Molasses (2h)
-*** TODO Alignment (2h)
+** DONE Gray Molasses
+*** DONE Alignment
 ** DONE Dark State Pumping
 ** TODO Magnetic trap and evaporative cooling (2h)
 *** TODO Field Zeroing (2h)

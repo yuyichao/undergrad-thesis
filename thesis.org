@@ -1,38 +1,47 @@
-* TODO All (2h)
+* TODO All (9h30min)
+** More Reference (1h)
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* DONE Theory
+* TODO Theory (4h)
 ** DONE Overview
 ** DONE BEC
 *** DONE Overview
 *** DONE BEC in harmonic trap
-** DONE Lithium-7 atoms
+** TODO Lithium-7 atoms (1h)
 *** DONE Overview
 *** DONE Fine structure
 *** DONE Hyperfine structure
 *** DONE Zeeman effect
-** DONE Cooling and traping
+*** TODO Define notation for states (1h)
+** TODO Cooling and traping (3h)
 *** DONE Overview
 *** DONE Zeeman slower
-*** DONE MOT
-*** DONE Gray Molasses
+*** TODO MOT (2h)
+**** TODO More quantitative (2h)
+*** TODO Gray Molasses (1h)
+**** TODO Mention Sisyphus cooling (1h)
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (2h)
-** DONE Overview
-** DONE Laser system
+* TODO Experiment (4h30min)
+** TODO Overview (1h)
+*** TODO show my contribution (1h)
+** TODO Laser system (1h)
+*** TODO Explain goal and define notations (1h)
 ** DONE Vacuum chamber and magnetic field coils
 *** DONE Main Coil Configuration
-** DONE MOT and CMOT
+** TODO MOT and CMOT (30min)
+*** TODO tweak (30min)
 ** DONE Gray Molasses
 *** DONE Alignment
 ** DONE Dark State Pumping
-** TODO Magnetic trap and evaporative cooling (2h)
-*** TODO Field Zeroing (2h)
+** DONE Magnetic trap and evaporative cooling
+*** DONE Field Zeroing
 ** DONE Evaporate in optical dipole trap
-** DONE BEC
+** TODO BEC (2h)
+*** TODO Calibration of field with Feshbach resonance (1h)
+*** TODO breif discussion about BEC (1h)
 * DONE Conclusion

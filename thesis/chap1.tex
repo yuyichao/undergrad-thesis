@@ -95,7 +95,7 @@ One of the most important properties for laser manipulation of cold atoms is the
   \caption{Energy level structure of Lithium-$7$\cite{lithium-lines}}
   \label{li:lines}
 \end{figure}\\
-In an external magnetic field, each $F\neq0$ levels will be split because of the Zeeman effect. At low field, this splitting is described by the Land\'e $g$-factor $\Delta=g_F\mu_Bm_FB_z$ as shown in table \ref{li7:g-factors}. At higher magnetic field, different hyperfine levels starts to mix and the Zeeman effect is no-longer linear. Most importantly, for $2^2S_{1/2}$ ground states the $F=1$ states have a negative slope at high magnetic field and all the $F=2$ states except $m_F=-2$ has a positive slope. (Note that $F$ and $m_F$ are no-longer good quantum numbers at high magnetic field but there are states at high field that are adiabatically connected with these $F$ and $m_F$ eigenstates). The states with a positive slope of the Zeeman shift are magnetically trappable states since they can be trapped by a static magnetic field which can have a local minimum (but not a maximum \ref{theory:mt}) in the center. Only $|2, 2\rangle$ and $|2, 1\rangle$ are both trappable at high field and low field.
+In an external magnetic field, each $F\neq0$ levels will be split because of the Zeeman effect. At low field, this splitting is described by the Land\'e $g$-factor $\Delta=g_F\mu_Bm_FB_z$ as shown in table \ref{li7:g-factors}. At higher magnetic field, different hyperfine levels starts to mix and the Zeeman effect is no-longer linear. Most importantly, for $2^2S_{1/2}$ ground states the $F=1$ states have a negative slope at high magnetic field and all the $F=2$ states except $m_F=-2$ has a positive slope. (Note that $F$ and $m_F$ are no-longer good quantum numbers at high magnetic field but there are states at high field that are adiabatically connected with these $F$ and $m_F$ eigenstates). The states with a positive slope of the Zeeman shift are magnetically trappable states since they can be trapped by a static magnetic field which can have a local minimum (but not a maximum \ref{theory:mt}) in the center. Only $|F=2, m_F=2\rangle$ and $|F=2, m_F=1\rangle$ states are both trappable at high field and low field.
 
 \begin{table}
   \caption{Land\'e $g$-factors of Lithium-$7$}
@@ -122,9 +122,9 @@ The atoms comes out of the oven has an average velocity determined by the Maxwel
 \eqar{
   \bar v=&\sqrt{\frac{k_BT}{2\pi m}}
 }
-We can slow down the atoms using the recoil of photon scattering by shining resonance light to the beam. However, since the atomic transition resonance is very narrow ($\Gamma=2\pi\cdot5.9\text{MHz}$) compare to the Doppler shift ($\Delta\nu=\nu v/c\approx590\text{MHz}$), the atom will soon shift out of resonance once it slows down. There are several ways to solve this problem. One way is to modulate the laser frequency, either swiping with time (frequency chirping) or making it broadband (white light). The Zeeman slower solves the problem by changing the resonance of the atom with Zeeman effect. This is the most popular way for alkali atoms which usually have a cycling transition with linear Zeeman effect in a large range.\\
+We can slow down the atoms using the recoil of photon scattering by shining resonance light to the beam. However, since the atomic transition resonance is very narrow ($\Gamma=2\pi\cdot5.9\text{MHz}$) compare to the Doppler shift ($\Delta\nu=\nu v/c\approx590\text{MHz}$), the atom will soon shift out of resonance once it slows down. There are several ways to solve this problem. One way is to modulate the laser frequency, either sweeping with time (frequency chirping) or making it broadband (white light). The Zeeman slower solves the problem by changing the resonance of the atom with the Zeeman effect. This is the most popular way for alkali atoms which usually have a cycling transition with a linear Zeeman effect in a large range of magnetic field.\\
 \\
-The Zeeman slower has a magnetic field aligned with the atom beam with a spatially variant amplitude. By shining circularly polarized light against the atom beam, the atoms in the beam are optically pumped to one of the two stretch states determined by the relative direction of the field and the light polarization. If the magnetic field is changing in a way such that the Zeeman shift of the atom follows the Doppler shift when atoms slow down, the atom beam will be always in resonance and continuously being slowed down, i.e.
+The Zeeman slower has a magnetic field aligned with the atom beam with a spatially varying amplitude. By shining circularly polarized light against the atom beam, the atoms in the beam are optically pumped to one of the two stretched states determined by the relative direction of the field and the light polarization. If the magnetic field is changing in a way such that the Zeeman shift of the atom follows the Doppler shift when atoms slow down, the atom beam will be always in resonance and continuously being slowed down, i.e.
 \eqar{
   g_Fm_F\mu_BB=\frac{v}{c}\nu+\Delta
 }
@@ -140,7 +140,7 @@ where $\Gamma$ is the linewidth of the transition.
 
 \subsection{Magneto-Optical Trap (MOT)}\label{theory:mot}
 
-As in most cold atom experiment, our experiment starts with loading Zeeman slowed atom into a magneto-optical trap (MOT). MOT is a technique that uses laser and magnetic field gradient to provides both molasses cooling and confinement. In order to understand how MOT works, we will consider a one-dimensional model consisting of a spatially varying magnetic field $B=B_x=B'x$, two counter propagating, red-detuned, circularly polarized light with atoms sitting close to the zero of the magnetic field.\\
+As in most cold atom experiment, our experiment starts with loading Zeeman slowed atom into a magneto-optical trap (MOT). MOT is a technique that uses laser and magnetic field gradient to provides both molasses cooling and confinement. In order to understand how the MOT works, we will consider a one-dimensional model consisting of a spatially varying magnetic field $B=B_x=B'x$, two counter propagating, red-detuned, circularly polarized light with atoms sitting close to the zero of the magnetic field.\\
 \\
 The cooling and trapping effect in a MOT can be understood separately. Let us first consider an atom in the center of the MOT moving in the $+x$ direction. Since the light is red-detuned, the Doppler effect will shift the atom closer to the light in $-x$ direction and farther from the light in $+x$ direction. The atom will therefore scatters more photons from the $-x$ light and experience an average force proportional but in the opposite direction with its velocity. Such a force will damp the motion of the atom and therefore cool down the temperature of the cloud.\\
 \\
@@ -243,16 +243,16 @@ which will be the state most of the atoms will be pumped into. (The state is dar
   \caption{Schematic of a $1D$ Gray Molasses.\cite{gm-theory}}
   \label{gm:dressed}
 \end{figure}\\
-The cooling effect of the gray molasses can be understood in the dressed atom picture for the atom and the pumper beam as shown in figure \ref{gm:dressed}, where,
+The cooling effect of the gray molasses can be understood in the dressed atom picture for the atom and the pumper beam as shown in figure \ref{gm:dressed}, where the new energy eigenstates are,
 \eqar{
   |2'\rangle=&\frac{\delta^2}{\delta^2+\Omega_2(x)^2}\paren{|2\rangle-\ui\Omega_2(x)|3\rangle}\\
   |3'\rangle=&\frac{\delta^2}{\delta^2+\Omega_2(x)^2}\paren{|3\rangle-\ui\Omega_2(x)|2\rangle}
 }
-Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\rangle$ is small leaving $|3'\rangle$ a short lifetime and $|2'\rangle$ a longer lifetime. The two counter-propagating pumper beams create a standing wave which causes periodic AC-Stark shift in the dressed $|2'\rangle$ and $|3'\rangle$ states. For a repumper with the same or slightly smaller blue detuning compare to the pumper. It is the most closest to the resonance with the dressed states at the nodes of the standing wave where the mixing is minimized. Therefore, the repumper will most likely pumps atoms into the $|2'\rangle$ state (through $|3'\rangle$ as shown in figure \ref{gm:dressed}) at the node of the standing wave and the atoms will most likely exit the state at the anti-node of the standing wave where the lifetime of $|2'\rangle$ is the shortest because of the maximum mixing. Since potential energy for atoms in $|2'\rangle$ is minimized at the nodes and maximized at the anti-nodes the atoms will on average feel a damping force by climbing up the hill in $|2'\rangle$. The height of the hill, therefore the cooling force, is proportional to the laser intensity. Combined with the low scattering rate due to the dark state, the gray molasses can be used to quickly cool the cloud after MOT to sub-Doppler temperature.
+Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\rangle$ is small giving $|3'\rangle$ a short lifetime and $|2'\rangle$ a longer lifetime. The two counter-propagating pumper beams create a standing wave which causes periodic AC-Stark shift in the dressed $|2'\rangle$ and $|3'\rangle$ states. A repumper with the same or slightly smaller blue detuning compared to the pumper is closest to the resonance with the dressed states at the nodes of the standing wave where the mixing is minimized. Therefore, the repumper most likely pumps atoms into the $|2'\rangle$ state (through $|3'\rangle$ as shown in figure \ref{gm:dressed}) at the node of the standing wave and the atoms will most likely exit the state at the anti-node of the standing wave where the lifetime of $|2'\rangle$ is the shortest because of the maximum mixing. Since potential energy for atoms in $|2'\rangle$ is minimized at the nodes and maximized at the anti-nodes the atoms will on average feel a damping force by climbing up the hill in $|2'\rangle$. The height of the hill, therefore the cooling force, is proportional to the laser intensity. Combined with the low scattering rate due to the dark state, the gray molasses can be used to quickly cool the cloud after MOT to sub-Doppler temperature.
 
-\subsection{Evaporation in Static Magnetic Trap}\label{theory:mt}
+\subsection{Evaporation in a Static Magnetic Trap}\label{theory:mt}
 
-The density and temperature of a laser cooled cloud is usually limited by the scattering of photons. Therefore, in order to reach quantum degeneracy, one usually need to use a way that can cool the atoms without shining resonant light onto them. The way we use in our experiment is evaporative cooling in a magnetic trap and an optical dipole trap. In this section, I will describe the theory of static magnetic quadrupole trap and radio frequency evaporation and the theory of evaporation in an optical dipole trap will be discussed in the next section.\\
+The density and temperature of a laser cooled cloud is usually limited by the scattering of photons. Therefore, in order to reach quantum degeneracy, one usually needs to use a way that can cool the atoms without shining resonant light onto them. The method we use in our experiment is evaporative cooling in a magnetic trap and an optical dipole trap. In this section, I will describe the theory of static magnetic quadrupole trap and radio frequency evaporation and the theory of evaporation in an optical dipole trap will be discussed in the next section.\\
 \\
 The static magnetic trap, as the name suggested, is created using static magnetic field and the Zeeman effect of the atoms. Assuming a monotonic the Zeeman effect, the atoms will be trapped at an extremum of the field. Since the magnetic field in the vacuum satisfies the source-less Maxwell equation, we have,
 \eqar{
@@ -264,7 +264,7 @@ The static magnetic trap, as the name suggested, is created using static magneti
   =&2\paren{\nabla B}^2\\
   \geqslant&0
 }
-Therefore, the only local extremum that is possible for a static magnetic field in the vacuum is a local minimum and only states with a positive Zeeman shift (low field seeking) can be trapped magnetically.\\
+Therefore, the only local extremum that is possible for a static magnetic field in the vacuum is a local minimum and only states with a positive Zeeman shift (low field seeking) can be trapped magnetically (known as Wing's theorem\cite{wing-theorem}).\\
 \\
 The static magnetic field with a local minimum in the center can be implemented in many different ways. The configuration used in this experiment is a quadrupole field created by a set of Helmholtz coils carrying opposite current, which provides the tighter confinement compare to other configurations. Closed to the center of the trap, the magnetic field can be expressed as,
 \eqar{
@@ -287,10 +287,10 @@ Since the magnetic field is $0$ at the center of the trap where all the Zeeman l
         \draw[line width=1,->] (-0, 0) -- ++(0, 8) node[above] {$E$};
 
         % 2, 2
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|2, 2\rangle$};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|F=2, m_F=2\rangle$};
 
         % 1, 1
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|1, 1\rangle$};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|F=1, m_F=1\rangle$};
 
         % 2, 2 bend
         \draw[color=blue] plot[id=x,domain=-3.5:3.5,samples=1000] function{4 - (sqrt((abs(x) - 3)**2 + 1.0 / 9) - 3)};
@@ -316,10 +316,10 @@ Since the magnetic field is $0$ at the center of the trap where all the Zeeman l
         \draw[line width=1,->] (-0, 0) -- ++(0, 8) node[above] {$E$};
 
         % 2, 2
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|2, 2\rangle$};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{abs(x) + 4} node[right] {$|F=2, m_F=2\rangle$};
 
         % 1, 1
-        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|1, 1\rangle$};
+        \draw[dashed] plot[id=x,domain=-3:3,samples=1000] function{3 - abs(x)} node[above right] {$|F=1, m_F=1\rangle$};
 
         % 2, 2 bend
         \draw[color=blue] plot[id=x,domain=-3.5:3.5,samples=1000] function{4 - (sqrt((abs(x) - 1)**2 + 1.0 / 9) - 1)};
@@ -336,21 +336,19 @@ Since the magnetic field is $0$ at the center of the trap where all the Zeeman l
   \caption{RF evaporation in magnetic trap. The temperature goes down and the phase space density goes up during evaporation.}
   \label{mt:evap}
 \end{figure}\\
-After trapping the atoms with the magnetic field, we use radio frequency induced spin-flip to evaporate the cloud. As shown in figure \ref{mt:evap}, the $|2, 2\rangle$ has a positive Zeeman effect whereas the $|1, 1\rangle$ state has a negative Zeeman shift. After all the atoms are trapped in the $|2, 2\rangle$ state, a RF field that is blue detuned to the zero field resonance is applied which mixes the two states and turns the potential curve around at the resonance field. As a result, the depth of the trap is lowered and atoms which has higher energy can now escape from the trap. If the RF knife is placed much higher than the thermal energy $k_BT$, each leaving atoms will carry away energy a lot higher than the averaged value leaving a lower average energy, therefore lower temperature, for the atoms remaining in the trap. After the cloud gets colder, less and less atoms will have the energy to pass the RF knife, at which point the RF frequency can be sweep down to accelerate the evaporation. In order for the evaporative cooling to work efficiently, a high elastic collision rate (high rate for creating atoms with high energy) is also necessary.
+After trapping the atoms with the magnetic field, we use radio frequency induced spin-flip to evaporate the cloud. As shown in figure \ref{mt:evap}, the $|F=2, m_F=2\rangle$ has a positive slope of the Zeeman shift whereas the $|F=1, m_F=1\rangle$ state has a negative one. After all the atoms are trapped in the $|F=2, m_F=2\rangle$ state, a RF field that is blue detuned to the zero field resonance is applied which mixes the two states and turns the potential curve around at the resonance field. As a result, the depth of the trap is lowered and atoms which has higher energy can now escape from the trap. If the RF knife is placed much higher than the thermal energy $k_BT$, each leaving atoms will carry away energy a lot higher than the averaged value leaving a lower average energy, therefore lower temperature, for the atoms remaining in the trap. After the cloud gets colder, fewer and fewer atoms will have the energy to pass the RF knife, at which point the RF frequency can be sweep down to accelerate the evaporation. In order for the evaporative cooling to work efficiently, a high elastic collision rate (high rate for creating atoms with high energy) is also necessary.
 
 \subsection{Evaporation in Optical Dipole Trap}\label{theory:odt}
 
 Although RF evaporation in the magnetic trap is very convenient and efficient, it does have some limitations,
 \begin{enumerate}
 \item
-  The atoms have to be in a hyperfine state.
+  The atoms have to be in a specific hyperfine state.
 \item
-  Magnetic field cannot be freely changed.
-\item
-  Hard to manipulate with RF field (due to the field gradient across the cloud.)
+  Cannot use a Feshbach resonance to tune the interaction with magnetic field.
 \end{enumerate}
-Moreover, for Lithium-$7$, the trappable $|2, 2\rangle$ state has a negative scattering length ($-27a_0$) making it impossible to create a stable Bose-Einstein condensate with a large atom number. In order to solve the problem, we switch to an optical dipole trap and do the final evaporation there.\\
+Moreover, for Lithium-$7$, the trappable $|F=2, m_F=2\rangle$ state has a negative scattering length ($-27a_0$) making it impossible to create a stable Bose-Einstein condensate with a large atom number. In order to solve the problem, we switch to an optical dipole trap and do the final evaporation there.\\
 \\
-The optical dipole trap (ODT) is created using the negative AC Stark shift of a red detuned laser beam. Since the AC Stark effect is proportional to $\delta^{-1}$ (where $\delta$ is the detuning) and the scattering (heating) is proportional to $\delta^{-2}$, high power beams with huge detuning ($\approx100THz$) is often used in order to introduce the least amount of heating for the same trapping potential.\\
+The optical dipole trap (ODT) is created using the negative AC Stark shift of a red detuned laser beam. Since the AC Stark effect is proportional to $\delta^{-1}$ (where $\delta$ is the detuning) and the scattering (heating) is proportional to $\delta^{-2}$, high power beams with huge detuning ($\approx100THz$) are often used in order to introduce the least amount of heating for the same trapping potential.\\
 \\
-Evaporation in an ODT is done simply by lowering the potential (beam power). Since a positive and big scattering length is necessary for efficient evaporation to BEC, we spin-flip the atoms into $|1, 1\rangle$ and evaporate close to a Feshbach resonance with an appropriate scattering length.
+Evaporation in an ODT is done simply by lowering the potential (beam power). Since a positive and big scattering length is necessary for efficient evaporation to BEC, we spin-flip the atoms into $|F=1, m_F=1\rangle$ and evaporate close to a Feshbach resonance with an appropriate scattering length.

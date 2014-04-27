@@ -22,7 +22,7 @@
 *** DONE Gray Molasses
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (6h)
+* TODO Experiment (2h)
 ** DONE Overview
 ** DONE Laser system
 ** DONE Vacuum chamber and magnetic field coils

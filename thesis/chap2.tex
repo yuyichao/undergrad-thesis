@@ -1,6 +1,6 @@
 \chapter{Experimental Setup and Results}
 
-In this chapter, I will describe our experimental setup and results. It includes a brief discussion of our optical tables setup (\ref{exp:laser-table} and \ref{exp:machine-table}), the implementation, optimization and performance of each steps (\ref{exp:mot}, \ref{exp:gm}, \ref{exp:pump}, \ref{exp:mt} and \ref{exp:odt}) and finally some basic characteristic of our BEC (\ref{exp:bec}).
+In this chapter, I will describe our experimental setup and results. It includes a brief discussion of our optical tables setup (\ref{exp:laser-table} and \ref{exp:machine-table}), the implementation, optimization and performance of each steps (\ref{exp:mot}, \ref{exp:gm}, \ref{exp:pump}, \ref{exp:mt} and \ref{exp:odt}) and finally some basic characteristic of our BEC (\ref{exp:odt}).
 
 \section{Laser System}\label{exp:laser-table}
 The laser table is where we prepare all the light resonance with the Lithium-$7$ transition ($\approx671nm$). As discussed in the previous chapter, there are four distinct lines that we need in the experiment, the combination of $D1$, $D2$ with $F1$, $F2$. At a certain time, we need either $D1$ or $D2$ light with the probability of using both $F1$ and $F2$ at the same time and the laser table is designed to do just this.\\
@@ -214,7 +214,6 @@ After we repeated this on all the gray molasses beams, we took time of flight im
 \end{table}
 
 \section{Dark State Pumping}\label{exp:pump}
-
 At the end of Laser cooling, the atoms are distributed in different hyperfine levels not all of which are trappable. However, in order to transfer to and evaporate in the magnetic trap, all the atoms have to be in a single trappable state. The state we select in our experiment is the $F=2, m_F=2$ state both because it is trappable in any field regime and for a better elastic to inelastic collision rate ratio.\\
 \\
 For transfering atom into the desired state, we use the technique known as dark state pumping to minimizing the heating from photon scattering during the pumping step. Using the $D1$ transition to the $F'=2$ state, the $F=2, m_F=2$ state is dark for the $\sigma^+$ pumping light. In another word, after the atoms are pumped into the right state, they will become invisible and stop scattering any photons, in contrast with pumping with the $D2$ transition, in which case the atoms in the right state will cycle on the $F=2, m_F=2$ to $F'=3, m_F=3$ and heats up quickly.\\
@@ -229,7 +228,18 @@ Another effect we want to avoid is the re-scattering of the pumping light, which
 \end{figure}
 
 \section{Magnetic Trap}\label{exp:mt}
-When the atoms are in the magnetic trap, the center of the trap need to be plugged in order to avoid Majorana loss. This is done with a $10$W $532$nm green laser beam, focused to $20\mu m$ at the center of the trap. In order to keep it aligned for different trap gradient, we zero the transverse magnetic field by measuring the center position of a small cloud in the magnetic trap with different gradients and different bias field. Figure \ref{exp:field-zeroing} shows the result of this measurement. We pick the bias field with the smallest displacement at different gradient, for which the center of the trap moves by smaller than one pixel ($20\mu m$). Figure \ref{exp:plug-power} shows the number of atom after the magnetic trap, the saturation of the atom number with $6$W of plug power shows that we have successful suppressed the Majorana loss. Due to the high inelastic collision rate, low elastic collision rate of Lithium-$7$ and the atom number fluctuation in our experiment, it is hard to optimize the RF evaporation purely experimentally. Instead, the evaporation in our experiment is optimized using numeric simulation. After $2.5$s of RF evaporation, we are left with $6\cdot10^7$ atoms with a temperature of $4\mu$K and a density of $10^{12}\text{cm}^{-3}$.
+In order for an atom to stay trapped in a magnetic trap, it must maintain its Zeeman level. The adiabatic condition, tells us that this means the local magnetic field of an atom should not be too small or change too fast. Although this condition can be easily satisfied for a cold enough cloud, it cannot always hold around the center of the quadrupole magnetic trap where the field goes to zero. Therefore, there is a ``hole'' at the center of a quadrupole trap where atoms can spin flip and escape and the loss caused by this ``hole'' is called Majorana loss. Since the center of the trap is also the lowest point of the trapping potential and therefore is where the atom density is maximized, we will see large Majorana lossing rate in a pure quadrupole trap. The Majorana loss can be reduced or avoided by decreasing the atom number inside the hole. In our experiment, this is done with a ``plug'' beam which is a $10$W $532$nm green laser beam focused to $20\mu m$ at the center of the trap creating a positive AC Stark shift and pushing the atoms away from the center. Figure \ref{exp:plug-power} shows the number of atom after the magnetic trap, the saturation of the atom number with $6$W of plug power shows that we have successful suppressed the Majorana loss with the plug beam.\\
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=9cm]{plug-power.png}
+  \end{center}
+  \caption{Saturation of the Plug Laser Power.}
+  \label{exp:plug-power}
+\end{figure}
+\\
+Due to the high three-body inelastic collision loss rate in Lithium-$7$, we need to open the trap, i.e. decrease the trapping gradient, during evaporation to keep a relatively low spacial density. However, since the center (zero) of the quadrupole field is determined by the ratio between the quadrupole field and the stray field around the center, the zero of the trap, therefore the Majorana hole, may move when we open the trap and might even move out of the plug beam. Although it is possible to shift either the zero or the plug and let them track each other during evaporation, the simplest way to solve the problem is actually to zero the stray field so that the center will never move while openning up. For achieving the high precision of field zeroing ($\leqslant100\text{mG}$), we zero the field by measuring the position of the center of the quadrupole trap. In the experiment, we decrease the trap gradient to certain value while doing a deep cut by sweeping the RF frequency close to resonance and measure the center position of the resulting small cloud left in the trap. Figure \ref{exp:field-zeroing} shows the result of this measurement with different trap gradient and bias field in both $x$ and $y$ directions. We pick the bias field with the smallest displacement at different gradient, for which the center of the trap moves by smaller than one pixel ($20\mu m$).\\
+\\
+Because of the small the elastic to inelastic collision rate ratio, the atom number fluctuation in the experiment and the necessity to open up the trap during evaporation, it is hard to optimize the RF evaporation purely experimentally. Instead, the evaporation in our experiment is optimized using numeric simulation. With our final sequence, after $2.5$s of RF evaporation, we are left with $6\cdot10^7$ atoms with a temperature of $4\mu$K and a density of $10^{12}\text{cm}^{-3}$.
 \begin{figure}
   \begin{center}
     \subfigure[$x$ direction]{
@@ -241,13 +251,6 @@ When the atoms are in the magnetic trap, the center of the trap need to be plugg
   \end{center}
   \caption{Precise Field Zeroing in Magnetic trap}
   \label{exp:field-zeroing}
-\end{figure}
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=9cm]{plug-power.png}
-  \end{center}
-  \caption{Saturation of the Plug Laser Power.}
-  \label{exp:plug-power}
 \end{figure}
 
 \section{BEC in Optical Dipole Trap}\label{exp:odt}

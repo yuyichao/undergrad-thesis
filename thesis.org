@@ -1,4 +1,4 @@
-* TODO All (8h30min)
+* TODO All (7h30min)
 ** More Reference (1h)
 * DONE Abstract
 * DONE Acknoledgements
@@ -26,9 +26,9 @@
 **** TODO Mention Sisyphus cooling (1h)
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (4h30min)
-** TODO Overview (1h)
-*** TODO show my contribution (1h)
+* TODO Experiment (3h30min)
+** DONE Overview
+*** DONE show my contribution
 ** TODO Laser system (1h)
 *** TODO Explain goal and define notations (1h)
 ** DONE Vacuum chamber and magnetic field coils

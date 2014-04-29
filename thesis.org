@@ -1,5 +1,5 @@
-* TODO All (1h)
-** More Reference (1h)
+* DONE All
+** DONE More Reference
 * DONE Abstract
 * DONE Acknoledgements
 * DONE Introduction

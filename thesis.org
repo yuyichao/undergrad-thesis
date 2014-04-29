@@ -1,4 +1,4 @@
-* TODO All (3h)
+* TODO All (1h)
 ** More Reference (1h)
 * DONE Abstract
 * DONE Acknoledgements
@@ -6,7 +6,7 @@
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* TODO Theory (2h)
+* DONE Theory
 ** DONE Overview
 ** DONE BEC
 *** DONE Overview
@@ -17,11 +17,11 @@
 *** DONE Hyperfine structure
 *** DONE Zeeman effect
 *** DONE Define notation for states
-** TODO Cooling and traping (2h)
+** DONE Cooling and traping
 *** DONE Overview
 *** DONE Zeeman slower
-*** TODO MOT (2h)
-**** TODO More quantitative (2h)
+*** DONE MOT
+**** DONE More quantitative
 *** DONE Gray Molasses
 **** DONE Mention Sisyphus cooling
 *** DONE Magnetic trap

@@ -193,7 +193,14 @@ In order to understand the source of the trapping force in a MOT, we can conside
   \caption{Schematic of a $1D$ MOT with a $F = 0$ to $F = 1$ transition.}
   \label{mot:energy}
 \end{figure}\\
-The performance of the MOT is usually limited by the random kick from scattered photons (Doppler limit on temperature) and light induced collisions (limits the density and atom number).
+According to the above discussion, the force an atom feels in the MOT comes from the difference in the scattering rate from the pairs of counter-propagating beams, which can be expressed as,
+\eqar{
+  F=&\hbar k\paren{w\paren{\delta_0+\frac{\omega}{c}v+\frac{g\mu_BB'}{\hbar}x}-
+    w\paren{\delta_0-\frac{v}{c}\omega-\frac{g\mu_BB'}{\hbar}x}}\\
+  \approx&2\hbar k\eval{\diff{w}{\delta}}{\delta=\delta_0}\paren{\frac{\omega}{c}v+\frac{g\mu_BB'}{\hbar}x}\\
+  =&-2\hbar k\abs{\eval{\diff{w}{\delta}}{\delta=\delta_0}}\frac{\omega}{c}v-2g\mu_BB'k\abs{\eval{\diff{w}{\delta}}{\delta=\delta_0}}x
+}
+where $\hbar k$ is the recoil momentum of a single photon, $w(\delta)$ is the scattering rate as a function of the detuning, $\delta_0$ is the laser detuning, $\dfrac{\omega}{c}v$ is the doppler shift, and $\dfrac{g\mu_BB'}{\hbar}x$ is the spacially varying Zeeman shift. As we can see, both the cooling and confining force are proportional to the derivative of the scattering rate and therefore is generally larger with smaller detuning (until $\Gamma/2$). However, since the heating from photon scattering is also larger at smaller detuning, this limits the lower possible temperature achievable by the MOT (Doppler limit). The temperature and atom density in the MOT is also limited by the rescattering of light and the light induced collisions.
 
 \subsection{Gray Molasses}\label{theory:gm}
 

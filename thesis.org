@@ -1,4 +1,4 @@
-* TODO All (6h30min)
+* TODO All (5h)
 ** More Reference (1h)
 * DONE Abstract
 * DONE Acknoledgements
@@ -6,7 +6,7 @@
 ** DONE General intro
 ** DONE Experiment overview
 ** DONE Thesis structure
-* TODO Theory (3h)
+* TODO Theory (2h)
 ** DONE Overview
 ** DONE BEC
 *** DONE Overview
@@ -22,11 +22,11 @@
 *** DONE Zeeman slower
 *** TODO MOT (2h)
 **** TODO More quantitative (2h)
-*** TODO Gray Molasses (1h)
-**** TODO Mention Sisyphus cooling (1h)
+*** DONE Gray Molasses
+**** DONE Mention Sisyphus cooling
 *** DONE Magnetic trap
 *** DONE ODT
-* TODO Experiment (2h30min)
+* TODO Experiment (2h)
 ** DONE Overview
 *** DONE show my contribution
 ** DONE Laser system

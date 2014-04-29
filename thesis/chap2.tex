@@ -13,7 +13,7 @@ Since the separation between $D1$ and $D2$ is larger than most of the common opt
 \\
 After getting one of the $D$ line we want, we use a $50$-$50$ cube beam splitter to put them into the $F1$ and $F2$ path. Since the hyperfine splitting of the ground state for Lithium-$7$ is relatively small ($803.5MHz$), we use a $400MHz$ AOM in the double pass setup to blue shift the frequency from $F2$ to $F1$ and to fine tune the frequency in certain range. For the $F2$ pass, two AOM's in the tandem setup are used for frequency fine tuning.\\
 \\
-The frequency generation stage is followed by an amplification stage using one tapered amplifier per-path to generate the power we want. After that we use AOM's, shutters and other optics to switch the laser, couple them into the fibers and deliver them to the machine table where we use them to manipulate the atoms.
+The frequency generation stage is followed by an amplification stage using one tapered amplifier per-path to generate the power we want. After that we use AOM's, shutters and other optics to switch the laser, couple them into the fibers with the right polarization and deliver them to the machine table where we use them to manipulate the atoms.
 
 \section{Vacuum Chamber and Main Coils Configuration}\label{exp:machine-table}
 
@@ -82,7 +82,7 @@ The windows and connections except the top and bottom window on our main vacuum 
   \label{chamber-light}
 \end{figure}
 \subsection{MOT-Gray Molasses Cage}\label{exp:mot-cage}
-The delivery of the MOT and gray molasses beam from the two in-coupler on the laser table to the six output on the machine table is done with a polarization maintaining evanescent wave fiber splitter which takes the light from the two input fibers and split them equally into the six output fibers. However, the MOT beams and the gray molasses beams have different requirement in beam sizes. On one hand, the MOT needs a bigger beam size for a bigger capture volume. On the other hand, as discussed earlier, for the gray molasses to work effectively, high intensity, therefore smaller beam size, is required. In order to have a different size for the two beams coming out of the same fiber, we send in the two beams with orthogonal polarization's (figure \ref{exp:laser-table-design}) and add polarization dependent beam expenders after the fiber output to shape the two beams differently. This beam shaping is done with a cage system shown in figure \ref{mot-cage-design}. The upper beam path is used for expanding the MOT beam whereas the lower path shapes the gray molasses beam to a smaller size. Each of the four lenses can slide in the cage, which are used to tweak the size and divergence of the beams. The alignment between beams is done with the two bottom mirrors and the two half wave-plates between the two polarization beam splitter cubes are used to balance the intensities.
+The delivery of the MOT and gray molasses beam from the two in-coupler on the laser table to the six output on the machine table is done with a polarization maintaining evanescent wave fiber splitter which takes the light from the two input fibers and split them equally into the six output fibers. However, the MOT beams and the gray molasses beams have different requirement in beam sizes. On one hand, the MOT needs a bigger beam size for a bigger capture volume. On the other hand, as discussed earlier, for the gray molasses to work effectively, high intensity, therefore smaller beam size, is required. In order to have a different size for the two beams coming out of the same fiber, we send in the two beams with orthogonal polarization's and add polarization dependent beam expenders after the fiber output to shape the two beams differently. This beam shaping is done with a cage system shown in figure \ref{mot-cage-design}. The upper beam path is used for expanding the MOT beam whereas the lower path shapes the gray molasses beam to a smaller size. Each of the four lenses can slide in the cage, which are used to tweak the size and divergence of the beams. The alignment between beams is done with the two bottom mirrors and the two half wave-plates between the two polarization beam splitter cubes are used to balance the intensities.
 \begin{figure}
   \begin{center}
     \begin{tikzpicture}
@@ -139,8 +139,7 @@ In order to generate bias field and quadrupole field with our main coil, we can 
 \end{table}
 
 \section{Magneto-Optical Trap (MOT) and Compressed-MOT}\label{exp:mot}
-
-The MOT loading is optimized by changing the parameters of the lasers to maximize the number of atoms in the MOT after $6$ seconds of loading. The optimum settings we have found are listed in table \ref{exp:mot-param} and the performance of our MOT can be found in table \ref{exp:laser-cooling}.\\
+As the first step of the laser cooling, the MOT loading is optimized by changing the parameters of the lasers to maximize the number of atoms in the MOT after $6$ seconds of loading. The optimum settings we have found are listed in table \ref{exp:mot-param} and the performance of our MOT can be found in table \ref{exp:laser-cooling}.\\
 \begin{table}
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|}\hline
@@ -151,13 +150,13 @@ The MOT loading is optimized by changing the parameters of the lasers to maximiz
   \caption{MOT parameters}
   \label{exp:mot-param}
 \end{table}\\
-Since our MOT is mainly optimized for loading rate, it is not necessarily optimized for density and cooling. Therefore, we added a compress-MOT (CMOT) step after the MOT in order to increase the density and decrease the temperature. In the CMOT step, we ramp the MOT frequency closer to resonance in $4.5$ms and decrease the intensity of the repumper. As a result, the cloud is compressed by radiation pressure and pumped to the $F1$ state. The temperature of the cloud is also decreased because of the decrease in scattering. Figure \ref{exp:cmot-image} shows the F pumping effect in the CMOT and the performance of the CMOT is listed in table \ref{exp:laser-cooling}.
+Since our MOT is mainly optimized for loading rate, it is not necessarily optimized for high density and low temperature. Therefore, we added a compress-MOT (CMOT) step after the MOT in order to increase the density and decrease the temperature. In the CMOT step, we ramp the MOT frequency closer to resonance in $4.5$ms and decrease the intensity of the repumper. As a result, the cloud is compressed by radiation pressure and pumped to the $F1$ state. The temperature of the cloud is also decreased because of the decrease in scattering. Figure \ref{exp:cmot-image} shows that the atom in the CMOT are pumped into the $F=1$ states and the performance of the CMOT is listed in table \ref{exp:laser-cooling}.
 \begin{figure}
   \begin{center}
-    \subfigure[CMOT imaged with $F2$ light without $F$ pumping.]{
+    \subfigure[CMOT imaged with $F2$ light.]{
       \includegraphics[width=5cm]{cmot-nopump.png}
     }
-    \subfigure[CMOT imaged with $F2$ light after $F$ pump into $F2$.]{
+    \subfigure[CMOT imaged with $F2$ light after pumped into $F2$.]{
       \includegraphics[width=5cm]{cmot-pump.png}
     }
   \end{center}

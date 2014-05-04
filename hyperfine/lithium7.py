@@ -39,6 +39,6 @@ def calc_field(state_e, state_g, freq, unc=None, init=10):
     B0 = newton(lambda B: trans(B) - freq, init) * 1e4
     if unc is None:
         return B0
-    Delta_B = abs(newton(lambda B: trans(B) - freq - unc, init) -
-                  newton(lambda B: trans(B) - freq + unc, init)) * 1e4 / 2
+    Delta_B = abs(newton(lambda B: trans(B) - freq - unc, B0) -
+                  newton(lambda B: trans(B) - freq + unc, B0)) * 1e4 / 2
     return B0, Delta_B

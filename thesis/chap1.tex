@@ -1,10 +1,10 @@
 \chapter{Theory}
 
-In this chapter, I am going to describe the theory behind our experiment. It is divided into three parts. The first section explains the theory of cold Bose gas and the Bose-Einstein condensation relevant to the experiment. The second section briefly describes some important properties of the Lithium-$7$ atom. Finally, in the third section, the cooling, trapping and state manipulation techniques used in the experiment are presented, including Zeeman slower (\ref{theory:zeeman}), MOT(\ref{theory:mot}), gray molasses (\ref{theory:gm}), magnetic trap (\ref{theory:mt}) and optical dipole trap (\ref{theory:odt}).
+In this chapter, I am going to describe the theory behind our experiment. It is divided into three parts. The first section explains the theory of the cold Bose gas and the Bose-Einstein condensation relevant to the experiment. The second section briefly describes some important properties of the Lithium-$7$ atom. Finally, in the third section, the cooling, trapping and state manipulation techniques used in the experiment are presented, including Zeeman slower (\ref{theory:zeeman}), MOT(\ref{theory:mot}), gray molasses (\ref{theory:gm}), magnetic trap (\ref{theory:mt}) and optical dipole trap (\ref{theory:odt}).
 
 \section{Bose-Einstein Condensate in Harmonic Trap}\label{theory:bec}
 
-Every real particle can be classified as one of two families according to its spin, fermions which have half integer spin and bosons which have integer spin. According to quantum field theory\cite{spin-statistics1,spin-statistics2} the many-particle wave function of identical particles must be symmetric or anti-symmetric under particle exchange for bosons or fermions respectively. For bosonic particles, because of the symmetry of the wave function, the possibility for particles to be in the same state is greatly enhanced. As a result, boson gas at ultra-low temperature forms a Bose-Einstein condensate (BEC), in which almost all of the particles are condensed to the lowest energy state. In the following, the relevant properties of BECs such as critical temperature and density distribution are described.\\
+Every real particle can be classified as one of two families according to its spin, fermions which have half integer spin and bosons which have integer spin. According to quantum field theory\cite{spin-statistics1,spin-statistics2} the many-particle wave function of identical particles must be symmetric or anti-symmetric under particle exchange for bosons or fermions respectively. For bosonic particles, because of the symmetry of the wave function, the possibility for particles to be in the same state is greatly enhanced. As a result, a Bose gas at ultra-low temperature forms a Bose-Einstein condensate (BEC), in which almost all of the particles are condensed to the lowest energy state. In the following, the relevant properties of BECs such as critical temperature and density distribution are described.\\
 \\
 Since the wave function of bosons is symmetric, multiple bosons can be in the same state. From this fact, the energy distribution can be calculated for bosons,
 \eqar{
@@ -16,7 +16,7 @@ In order to calculate the atom number in the condensate as well as the critical 
 \eqar{
   N_{th}=&\int_0^\infty\frac{g(\varepsilon)}{\ue^{\beta\varepsilon} - 1}\ud\varepsilon
 }
-where $g(\varepsilon)$ is the energy density of states. In our experiment, we create the BEC in a harmonic optical dipole trap (see \ref{theory:odt}) for which the density of states is,
+where $g(\varepsilon)$ is the density of states. In our experiment, we create the BEC in a harmonic optical dipole trap (see \ref{theory:odt}) for which the density of states is,
 \eqar{
   g(\varepsilon)=&\frac{\varepsilon^2}{2\hbar^3 \omega^3}\\
   N_{th}=&\frac{1}{2\hbar^3 \omega^3}\int_0^\infty\frac{\varepsilon^2}{\ue^{\beta\varepsilon} - 1}\ud\varepsilon\\
@@ -38,7 +38,7 @@ Condensate fraction (for large $N$),
 
 The atoms used in this experiment is the Bosonic isotope of Lithium, Lithium-$7$. In this section, I will present some properties of the Lithium-$7$ atoms that are important for the cooling and trapping techniques we use in the experiment.\\
 \\
-One of the most important properties for laser manipulation of cold atoms is the energy level structure. As all other alkali atoms, Lithium-$7$ has one unpaired valence electron with a $nS$ ground state and $nP$ excited states, where $n=2$ for Lithium-$7$. The fine structure split the excited states into $2^2P_{1/2}$ and $2^2P_{3/2}$ states corresponding to the $D1$ and $D2$ lines, which are about $10GHz$ apart. On top of these, the hyperfine structure caused by the nuclear spin ($I=3/2$ for Lithium-$7$) further split each of these states into different levels with different total angular momenta $F$. The precise frequencies of these transitions measured in the experiment are shown in figure \ref{li:lines}\\
+One of the most important properties for laser manipulation of cold atoms is the energy level structure. As all other alkali atoms, Lithium-$7$ has one unpaired valence electron with a $nS$ ground state and $nP$ excited states, where $n=2$ for Lithium-$7$. The fine structure split the excited states into $2^2P_{1/2}$ and $2^2P_{3/2}$ corresponding to the $D1$ and $D2$ lines, which are about $10GHz$ apart. On top of these, the hyperfine structure caused by the nuclear spin ($I=3/2$ for Lithium-$7$) further splits each of these states into different levels with different total angular momenta $F$. The precise frequencies of these transitions measured in the experiment are shown in figure \ref{li:lines}\\
 \begin{figure}
   \begin{center}
     \begin{tikzpicture}[scale=1.5]
@@ -95,7 +95,7 @@ One of the most important properties for laser manipulation of cold atoms is the
   \caption{Energy level structure of Lithium-$7$\cite{lithium-lines}}
   \label{li:lines}
 \end{figure}\\
-In an external magnetic fields, each $F\neq0$ levels will be split because of the Zeeman effect. At low field, this splitting is described by the Land\'e $g$-factor $\Delta=g_F\mu_Bm_FB_z$ as shown in table \ref{li7:g-factors}. At higher magnetic fields, different hyperfine levels start to mix and the Zeeman effect is nolonger linear. Most importantly, for $2^2S_{1/2}$ ground states the $F=1$ states have a negative slope at high magnetic field and all the $F=2$ states except $m_F=-2$ have a positive slope. (Note that $F$ and $m_F$ are no-longer good quantum numbers at high magnetic field but there are states at high field that are adiabatically connected with these $F$ and $m_F$ eigenstates). The states with a positive slope of the Zeeman shift are magnetically trappable states since they can be trapped by a static magnetic field which can have a local minimum (but not a maximum [\ref{theory:mt}]) in the center. The $m_F>0$ states are trappable at low field and all the $F=2$ states are trappable at high field. In particular, only $|F=2, m_F=2\rangle$ and $|F=2, m_F=1\rangle$ states are trappable both at high field and low field. This is important for our experiment because we would like to use stronger magnetic confinement to compress the could in order to get higher density and higher collision rates.
+In an external magnetic fields, each $F\neq0$ levels will be split because of the Zeeman effect. At low field, this splitting is described by the Land\'e $g$-factor $\Delta=g_F\mu_Bm_FB_z$ as shown in table \ref{li7:g-factors}. At higher magnetic fields, different hyperfine levels start to mix and the Zeeman effect is no longer linear. Most importantly, for $2^2S_{1/2}$ ground states the $F=1$ states have a negative slope at high magnetic field and all the $F=2$ states except $m_F=-2$ have a positive slope. (Note that $F$ and $m_F$ are no-longer good quantum numbers at high magnetic field but there are states at high field that are adiabatically connected with these $F$ and $m_F$ eigenstates). The states with a positive slope of the Zeeman shift are magnetically trappable states since they can be trapped by a static magnetic field which can have a local minimum (but not a maximum [\ref{theory:mt}]) in the center. The $m_F>0$ states are trappable at low field and all the $F=2$ states are trappable at high field. In particular, only $|F=2, m_F=2\rangle$ and $|F=2, m_F=1\rangle$ states are trappable both at high field and low field. This is important for our experiment because we would like to use stronger magnetic confinement to compress the could in order to get higher density and higher collision rates.
 
 \begin{table}
   \caption{Land\'e $g$-factors of Lithium-$7$}
@@ -118,7 +118,7 @@ The atoms used in an alkali atom experiment often come from an atom beam produce
 
 \subsection{Zeeman Slower}\label{theory:zeeman}
 
-The atoms which come out of the oven have an average velocity determined by the Maxwell-Boltzmann distribution,
+The atoms which come out of the oven have an average effusion velocity determined by the Maxwell-Boltzmann distribution\footnote{The velocity distribution of the effusive beam, however, is not Maxwell-Boltzmann.},
 \eqar{
   \bar v=&\sqrt{\frac{k_BT}{2\pi m}}
 }
@@ -140,7 +140,7 @@ where $\Gamma$ is the linewidth of the transition.
 
 \subsection{Magneto-Optical Trap (MOT)}\label{theory:mot}
 
-As in most cold atom experiment, our experiment starts with loading Zeeman slowed atom into a magneto-optical trap (MOT). MOT is a technique that uses lasers and a magnetic field gradient to provides both molasses cooling and confinement\cite{verenna}. In order to understand how the MOT works, we will consider a one-dimensional model consisting of a spatially varying magnetic field $B=B_x=B'x$, two counter propagating, red-detuned, circularly polarized light beams with atoms sitting close to the zero of the magnetic field.\\
+As in most cold atom experiment, our experiment starts with loading Zeeman slowed atoms into a magneto-optical trap (MOT). The MOT is a technique that uses lasers and a magnetic field gradient to provide both molasses cooling and confinement\cite{verenna}. In order to understand how the MOT works, we will consider a one-dimensional model consisting of a spatially varying magnetic field $B=B_x=B'x$, two counter propagating, red-detuned, circularly polarized light beams with atoms sitting close to the zero of the magnetic field.\\
 \\
 The cooling and trapping effects in a MOT can be understood separately. Let us first consider an atom in the center of the MOT moving in the $+x$ direction. Since the light is red-detuned, the Doppler effect will shift the atom closer to the light in $-x$ direction and farther from the light in $+x$ direction. The atom will therefore scatter more photons from the $-x$ light and experience an average force proportional to but in the opposite direction with its velocity. Such a force will damp the motion of the atom and therefore cool down the temperature of the cloud.\\
 \\
@@ -206,13 +206,13 @@ where $\hbar k$ is the recoil momentum of a single photon, $w(\delta)$ is the sc
 
 The $2^2P_{3/2}$ excited state of Lithium-$7$ we use for molasses cooling in the MOT does not have resolved hyperfine structure (Figure \ref{li:lines}). Therefore, we cannot form conventional polarization gradient cooling using the $D2$ line. Instead, we implement a gray molasses scheme on the D1 transition. This scheme was first studied and demonstrated by Christophe Salomon\cite{gm-theory} to achieve sub-Doppler temperature on some alkali isotopes that are not amenable for conventional polarization gradient cooling ($^7Li$, $^6Li$ and $^{40}K$). In this section, I am going to present a semi-quantitative explanation of this cooling scheme. See the original paper\cite{gm-theory} for more detail discussion.\\
 \\
-The gray molasses cooling uses three pairs of counter-propagating beams that can cool the cloud in all three dimensions. Like what we did for MOT, we will consider a $1-D$ case for simplicity. The model we will use has a pair of counter-propagating beams, each has a high intensity pumper, with a large blue detuning $\delta$ from the $F=2$ ($|2\rangle$) to $F'=2$ ($|3\rangle$) $D1$ transition, and a low intensity repumper, blue detuned from the $F=1$ ($|1\rangle$) to $F'=2$ $D1$ transition by the same detuning $\delta$. Let the Rabi frequency for the pumper and the repumper be $\Omega_2(x)$ and $\Omega_1(x)$ respectively.\\
+The gray molasses cooling uses three pairs of counter-propagating beams that can cool the cloud in all three dimensions. Like what we did for the MOT, we will consider a $1-D$ case for simplicity. The model we will use has a pair of counter-propagating beams, each has a high intensity pumper, with a large blue detuning $\delta$ from the $F=2$ ($|2\rangle$) to $F'=2$ ($|3\rangle$) $D1$ transition, and a low intensity repumper, blue detuned from the $F=1$ ($|1\rangle$) to $F'=2$ $D1$ transition by the same detuning $\delta$. Let the Rabi frequency for the pumper and the repumper be $\Omega_2(x)$ and $\Omega_1(x)$ respectively.\\
 \\
 Just as any other laser cooling method, the performance of the gray molasses is determined by the balance between cooling force and heating from photon scattering. Since the two beams (pumper and repumper) satisfy the Raman resonance condition, the system has a dark state which is a superposition of $|1\rangle$ and $|2\rangle$,
 \eqar{
   |NC\rangle=&\frac{\Omega_2|1\rangle-\Omega_1|2\rangle}{\sqrt{\Omega_1^2+\Omega_2^2}}
 }
-which will be the state most of the atoms will be pumped into. (The state is dark for stationary atoms and has a non-zero but small scattering rate for moving atoms.) Since the scattering is suppressed by the present of a dark state, the gray molasses produce little heating.\\
+which will be the state most of the atoms will be pumped into. (The state is dark for stationary atoms and has a non-zero but small scattering rate for moving atoms.) Since the scattering is suppressed by the presence of a dark state, the gray molasses produces little heating.\\
 \begin{figure}
   \begin{center}
     \begin{tikzpicture}
@@ -259,9 +259,9 @@ Since the detuning $\delta$ is large, the mixing between $|2\rangle$ and $|3\ran
 
 \subsection{Evaporation in a Static Magnetic Trap}\label{theory:mt}
 
-The density and temperature of a laser cooled cloud is usually limited by the scattering of photons. Therefore, in order to reach quantum degeneracy, one usually needs to use a way that can cool the atoms without shining resonant light onto them. The method we use in our experiment is evaporative cooling in a magnetic trap and an optical dipole trap. In this section, I will describe the theory of static magnetic quadrupole trap and radio frequency evaporation and the theory of evaporation in an optical dipole trap will be discussed in the next section.\\
+The density and temperature of a laser cooled cloud is usually limited by the scattering of photons. Therefore, in order to reach quantum degeneracy, one usually needs to use a way that can cool the atoms without shining resonant light onto them. The method we use in our experiment is evaporative cooling in a magnetic trap and an optical dipole trap. In this section, I will describe the theory of a static magnetic quadrupole trap and radio frequency evaporation and the theory of evaporation in an optical dipole trap will be discussed in the next section.\\
 \\
-The static magnetic trap, as the name suggested, is created using static magnetic field and the Zeeman effect of the atoms. Assuming a monotonic Zeeman effect, the atoms will be trapped at an extremum of the field. Since the magnetic field in the vacuum satisfies the source-less Maxwell equation, we have,
+The static magnetic trap, as the name suggested, is created using a static magnetic field and the Zeeman effect of the atoms. Assuming a monotonic Zeeman effect, the atoms will be trapped at an extremum of the field. Since the magnetic field in the vacuum satisfies the source-less Maxwell equation, we have,
 \eqar{
   0=&\nabla\times\paren{\nabla\times B}\\
   =&\nabla\paren{\nabla\cdot B}-\nabla^2B\\
@@ -279,7 +279,7 @@ The static magnetic field with a local minimum in the center can be implemented 
   B_y=&B'y\\
   B_z=&-2B'z
 }
-Since the magnetic field is $0$ at the center of the trap where all the Zeeman levels are degenerate, spin-flips of atoms (Majorana loss) occurs in the center of a quadrupole trap. This problem is fixed in the experiment by plugging the hole with a repulsive blue detuned laser beam. This problem as well as the solution will be further discussed in the experimental chapter (\ref{exp:mt})\\
+Since the magnetic field is $0$ at the center of the trap where all the Zeeman levels are degenerate, spin-flips of atoms (Majorana loss) occur in the center of a quadrupole trap. This problem is fixed in the experiment by plugging the hole with a repulsive blue detuned laser beam. This problem as well as the solution will be further discussed in the experimental chapter (\ref{exp:mt})\\
 \begin{figure}
   \begin{center}
     \subfigure[The beginning of RF evaporation]{

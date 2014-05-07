@@ -1,0 +1,1 @@
+In order to compile the tikz plots, you can copy the source code of the plot to a tex file and compile it using the standalone page style. Remember to include [packages.tex](thesis/packages.tex) for necessary packages. You might need a copy of [GnuPlot](http://www.gnuplot.info/) for some of the plots.
